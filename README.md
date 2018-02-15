@@ -57,6 +57,20 @@ For VSCode type
 vscode
 ```
 
+# URDF and RViz
+
+In order to debug URDF please launch
+
+```bash
+roslaunch robert_launch view_urdf.launch
+```
+
+To have a look on the state of the robot in RViz run
+
+```bash
+roslaunch robert_launch rviz.launch
+```
+
 ## Navigating on known map
 
 Start office simulation
@@ -67,7 +81,7 @@ roslaunch robert_launch simulation.launch
 
 Start UCU simulation
 ```bash
-roslaunch robert_launch simulation.launch world_file:=ucu.world
+roslaunch robert_launch simulation.launch world_file:=ucu
 ```
 
 Launch navigation stack (in order to launch second command split Terminator window by two using Ctrl-Shift-E. More information on Terminator shortcuts can be found [here](https://dmaricic.wordpress.com/2011/01/28/terminator-keyboard-shortcuts/))

@@ -10,5 +10,6 @@ catkin_package(
 install(FILES
   launch/gazebo.launch
   worlds/office.world
+  worlds/ucu.world
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
