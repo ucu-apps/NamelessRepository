@@ -1,13 +1,13 @@
 <?xml version='1.0'?>
 <sdf version='1.5'>
-  <model name="classroom_chair">
+  <model name="trapezoid_table">
     <pose>0 0 0 0 0 0</pose>
     <static>false</static>
     <link name='model_body'>
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://trapezoid_table.dae</uri>
+            <uri>model://meshes/visual_trapezoid_table.dae</uri>
           </mesh>
          </geometry>
       </visual>
@@ -15,7 +15,7 @@
       <collision>
         <geometry>
           <mesh>
-            <uri>model://simple_trapezoid_table.dae</uri>
+            <uri>model://meshes/collision_trapezoid_table.dae</uri>
           </mesh>
         </geometry>
       </collision>
