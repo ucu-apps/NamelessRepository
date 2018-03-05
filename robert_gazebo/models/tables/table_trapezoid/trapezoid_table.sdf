@@ -12,7 +12,7 @@
          </geometry>
       </visual>
 
-      <collision>
+      <collision name="collision>
         <geometry>
           <mesh>
             <uri>model://meshes/collision_trapezoid_table.dae</uri>
