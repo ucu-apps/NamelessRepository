@@ -7,15 +7,17 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://meshes/soft_chair_visual.dae</uri>
+            <uri>model://robert_gazebo/meshes/soft_chair_visual.dae</uri>
+            <scale>1 1 1</scale>
           </mesh>
          </geometry>
       </visual>
 
-      <collision>
+      <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://meshes/soft_chair_collision.dae</uri>
+            <uri>model://robert_gazebo/meshes/soft_chair_collision.dae</uri>
+            <scale>1 1 1</scale>
           </mesh>
         </geometry>
       </collision>

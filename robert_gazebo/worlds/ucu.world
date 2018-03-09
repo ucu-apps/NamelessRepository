@@ -11,7 +11,7 @@
     </include>
 
     <include>
-      <uri>model://models/soft_armchair</uri>
+      <uri>model://robert_gazebo/models/soft_armchair</uri>
       <name>soft_chair</name>
       <pose>-5 -5 0 0 0 0</pose>
     </include>
