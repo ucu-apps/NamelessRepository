@@ -7,7 +7,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://robert_gazebo/meshes/table_rectangular_high_visual.dae</uri>
+            <uri>model://robert_gazebo/meshes/table_rectangular_low_visual.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
          </geometry>
@@ -16,7 +16,7 @@
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://robert_gazebo/meshes/table_rectangular_high_collision.dae</uri>
+            <uri>model://robert_gazebo/meshes/table_rectangular_low_collisium.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -25,12 +25,12 @@
       <inertial>
         <pose> 0 0 0 0 0 0</pose>
         <inertia>
-          <ixx>2.07</ixx>
+          <ixx>1.45</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.74</iyy>
+          <iyy>0.55</iyy>
           <iyz>0</iyz>
-          <izz>1.94</izz>
+          <izz>1.5</izz>
         </inertia>
         <mass>10.0</mass>
       </inertial>
