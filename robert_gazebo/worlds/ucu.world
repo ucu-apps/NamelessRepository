@@ -10,6 +10,18 @@
       <uri>model://sun</uri>
     </include>
 
+    <include>
+      <uri>model://whiteboard_stand</uri>
+      <name>whiteboard_stand</name>
+      <pose>5 5 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://whiteboard_wall</uri>
+      <name>whiteboard_wall</name>
+      <pose>-5 -5 0 0 0 0</pose>
+    </include>
+
     <gui fullscreen='0'>
       <camera name='user_camera'>
         <pose>4.927360 -4.376610 3.740080 0.000000 0.275643 2.356190</pose>
