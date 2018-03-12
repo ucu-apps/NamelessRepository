@@ -17,7 +17,7 @@
                 <geometry>
                     <mesh>
                         <uri>model://robert_gazebo/meshes/collision_board_stand.dae</uri>
-                        <scale>1 1 1</scale>
+                        <scale>0.01 0.01 0.01</scale>
                     </mesh>
                 </geometry>
             </collision>
