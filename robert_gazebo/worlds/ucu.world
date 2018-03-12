@@ -22,6 +22,18 @@
       <pose>-2 -2 0 0 0 0</pose>
     </include>
 
+    <include>
+      <uri>model://robert_gazebo/models/dump</uri>
+      <name>dump</name>
+      <pose>2 2 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/puffy</uri>
+      <name>puffy</name>
+      <pose>5 5 0 0 0 0</pose>
+    </include>
+
     <gui fullscreen='0'>
       <camera name='user_camera'>
         <pose>4.927360 -4.376610 3.740080 0.000000 0.275643 2.356190</pose>
