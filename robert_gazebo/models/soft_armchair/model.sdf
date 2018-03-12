@@ -8,7 +8,7 @@
         <geometry>
           <mesh>
             <uri>model://robert_gazebo/meshes/soft_chair_visual.dae</uri>
-            <scale>1 1 1</scale>
+            <scale>0.5 0.5 0.5</scale>
           </mesh>
          </geometry>
       </visual>
@@ -17,7 +17,7 @@
         <geometry>
           <mesh>
             <uri>model://robert_gazebo/meshes/soft_chair_collision.dae</uri>
-            <scale>1 1 1</scale>
+            <scale>0.5 0.5 0.5</scale>
           </mesh>
         </geometry>
       </collision>
