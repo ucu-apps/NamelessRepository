@@ -11,13 +11,13 @@
     </include>
 
     <include>
-      <uri>model://whiteboard_stand</uri>
+      <uri>model://robert_gazebo/models/whiteboard_stand</uri>
       <name>whiteboard_stand</name>
       <pose>5 5 0 0 0 0</pose>
     </include>
 
     <include>
-      <uri>model://whiteboard_wall</uri>
+      <uri>model://robert_gazebo/models/whiteboard_wall</uri>
       <name>whiteboard_wall</name>
       <pose>-5 -5 0 0 0 0</pose>
     </include>
