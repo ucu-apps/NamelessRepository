@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.79.0 commit date:2017-09-11, commit time:10:43, hash:5bd8ac9</authoring_tool>
     </contributor>
-    <created>2018-03-13T14:09:51</created>
-    <modified>2018-03-13T14:09:51</modified>
+    <created>2018-03-13T14:19:58</created>
+    <modified>2018-03-13T14:19:58</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -49,7 +49,7 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="Trapezoid_Table_Collision" name="Trapezoid_Table_Collision" type="NODE">
-        <matrix sid="transform">-0.3761962 0 0 7.95992e-4 0 -0.3761962 0 0 0 0 -0.3761962 0 0 0 0 1</matrix>
+        <matrix sid="transform">-0.3761962 0 0 0 0 -0.3761962 0 0 0 0 -0.3761962 0 0 0 0 1</matrix>
         <instance_geometry url="#Cube-mesh" name="Trapezoid_Table_Collision"/>
       </node>
     </visual_scene>
