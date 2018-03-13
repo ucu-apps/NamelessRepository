@@ -8,6 +8,7 @@
         <geometry>
           <mesh>
             <uri>model://robert_gazebo/meshes/bookcase.dae</uri>
+            <scale>1 1 1</scale>
           </mesh>
          </geometry>
       </visual>
@@ -16,6 +17,7 @@
         <geometry>
           <mesh>
             <uri>model://robert_gazebo/meshes/collision_bookcase.dae</uri>
+            <scale>1 1 1</scale>
           </mesh>
         </geometry>
       </collision>
