@@ -7,7 +7,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://robert_gazebo/meshes/visual_trapezoid_table.dae</uri>
+            <uri>model://robert_gazebo/meshes/trapezoid_table_visual.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
          </geometry>
@@ -16,7 +16,7 @@
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://robert_gazebo/meshes/collision_trapezoid_table.dae</uri>
+            <uri>model://robert_gazebo/meshes/trapezoid_table_collision.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
