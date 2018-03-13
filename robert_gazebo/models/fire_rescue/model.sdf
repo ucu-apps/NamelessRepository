@@ -16,7 +16,7 @@
             <collision name="collision">
                 <geometry>
                     <mesh>
-                        <uri>model://robert_gazebo/meshes/collision_fire_resque_box.dae</uri>
+                        <uri>model://robert_gazebo/meshes/collision_fire_rescue_box.dae</uri>
                         <scale>1 1 1</scale>
                     </mesh>
                 </geometry>
