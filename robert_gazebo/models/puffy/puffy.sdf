@@ -8,7 +8,7 @@
         <geometry>
           <mesh>
             <uri>model://robert_gazebo/meshes/puffy_visual.dae</uri>
-            <scale>0.01 0.01 0.01</scale>
+            <scale>1 1 1</scale>
           </mesh>
          </geometry>
       </visual>
@@ -17,7 +17,7 @@
         <geometry>
           <mesh>
             <uri>model://robert_gazebo/meshes/puffy_collision.dae</uri>
-            <scale>0.01 0.01 0.01</scale>
+            <scale>1 1 1</scale>
           </mesh>
         </geometry>
       </collision>
