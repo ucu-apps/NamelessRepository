@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.5'>
-  <model name="trapezoid_table">
+  <model name="table_rectangular_low">
     <pose>0 0 0 0 0 0</pose>
     <static>false</static>
     <link name='model_body'>
@@ -16,7 +16,7 @@
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://robert_gazebo/meshes/table_rectangular_low_collisium.dae</uri>
+            <uri>model://robert_gazebo/meshes/table_rectangular_low_collision.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
