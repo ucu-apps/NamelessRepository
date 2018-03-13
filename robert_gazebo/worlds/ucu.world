@@ -12,7 +12,11 @@
 
     <include>
       <uri>model://robert_gazebo/models/table_trapezoid</uri>
+<<<<<<< HEAD
       <name>table_trapezoid</name>
+=======
+      <name>trapezoid_table</name>
+>>>>>>> 352b8232cc07e300097eb81acc46657d8d4a2993
       <pose>-5 -5 0 0 0 0</pose>
     </include>
 
