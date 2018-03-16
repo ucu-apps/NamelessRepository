@@ -25,12 +25,12 @@
             <inertial>
                 <pose> 0 0 0 0 0 0</pose>
                 <inertia>
-                    <ixx>2.07</ixx>
+                    <ixx>0.35</ixx>
                     <ixy>0</ixy>
                     <ixz>0</ixz>
-                    <iyy>0.74</iyy>
+                    <iyy>0.35</iyy>
                     <iyz>0</iyz>
-                    <izz>1.94</izz>
+                    <izz>0.43</izz>
                 </inertia>
                 <mass>10.0</mass>
             </inertial>
