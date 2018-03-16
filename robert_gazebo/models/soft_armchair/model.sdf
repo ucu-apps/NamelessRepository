@@ -8,7 +8,7 @@
         <geometry>
           <mesh>
             <uri>model://robert_gazebo/meshes/soft_chair_visual.dae</uri>
-            <scale>0.5 0.5 0.5</scale>
+            <scale>1 1 1</scale>
           </mesh>
          </geometry>
       </visual>
@@ -17,7 +17,7 @@
         <geometry>
           <mesh>
             <uri>model://robert_gazebo/meshes/soft_chair_collision.dae</uri>
-            <scale>0.5 0.5 0.5</scale>
+            <scale>1 1 1</scale>
           </mesh>
         </geometry>
       </collision>
@@ -25,14 +25,14 @@
       <inertial>
         <pose> 0 0 0 0 0 0</pose>
         <inertia>
-          <ixx>0.98</ixx>
+          <ixx>1.225</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.88</iyy>
+          <iyy>1.1</iyy>
           <iyz>0</iyz>
-          <izz>0.69</izz>
+          <izz>0.8625</izz>
         </inertia>
-        <mass>10.0</mass>
+        <mass>15.0</mass>
       </inertial>
     </link>
   </model>
