@@ -84,3 +84,4 @@ qtcreator-*
 *.fcstd1
 
 .DS_Store
+robert_gazebo/meshes/.DS_Store
