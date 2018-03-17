@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.79.0 commit date:2017-09-11, commit time:10:43, hash:5bd8ac9</authoring_tool>
     </contributor>
-    <created>2018-03-11T20:35:34</created>
-    <modified>2018-03-11T20:35:34</modified>
+    <created>2018-03-17T20:36:54</created>
+    <modified>2018-03-17T20:36:54</modified>
     <unit name="centimeter" meter="0.01"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -120,7 +120,7 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="Circle" name="Circle" type="NODE">
-        <matrix sid="transform">2.471521 2.47119 0 0.01060574 -2.47095 2.471761 0 11.26809 0 0 3.495 118.7764 0 0 0 1</matrix>
+        <matrix sid="transform">0.707172 0.7070774 0 0.01060574 -0.7070087 0.7072407 0 11.26809 0 0 1.000018 34.01832 0 0 0 1</matrix>
         <instance_geometry url="#Circle-mesh" name="Circle">
           <bind_material>
             <technique_common>
