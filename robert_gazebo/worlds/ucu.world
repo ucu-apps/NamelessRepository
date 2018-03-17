@@ -9166,5 +9166,10 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>-1.2423 -1.3637 0 0 -0 0</pose>
     </model>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair</uri>
+      <name>soft_armchair_001</name>
+      <pose>-5 -5 0 0 0 0</pose>
   </world>
 </sdf>
