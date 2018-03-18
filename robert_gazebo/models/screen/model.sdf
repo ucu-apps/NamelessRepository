@@ -12,6 +12,28 @@
                     </mesh>
                 </geometry>
             </visual>
+
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://robert_gazebo/meshes/screen_collision.dae</uri>
+                        <scale>1 1 1</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+
+            <inertial>
+                <pose> 0 0 0 0 0 0</pose>
+                <inertia>
+                    <ixx>0</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0</iyy>
+                    <iyz>0</iyz>
+                    <izz>0</izz>
+                </inertia>
+                <mass>0</mass>
+            </inertial>
         </link>
     </model>
 </sdf>
