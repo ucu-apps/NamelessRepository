@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.79.0 commit date:2017-09-11, commit time:10:43, hash:5bd8ac9</authoring_tool>
     </contributor>
-    <created>2018-03-17T22:08:50</created>
-    <modified>2018-03-17T22:08:50</modified>
+    <created>2018-03-19T22:50:07</created>
+    <modified>2018-03-19T22:50:07</modified>
     <unit name="centimeter" meter="0.01"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -23,7 +23,7 @@
               <color sid="ambient">0 0 0 1</color>
             </ambient>
             <diffuse>
-              <color sid="diffuse">0.8 0.3009149 0.01233446 1</color>
+              <color sid="diffuse">0.7372656 0.3050608 0 1</color>
             </diffuse>
             <specular>
               <color sid="specular">0.5 0.5 0.5 1</color>
@@ -49,7 +49,7 @@
               <color sid="ambient">0 0 0 1</color>
             </ambient>
             <diffuse>
-              <color sid="diffuse">0.09194507 0.06501418 0.02568658 1</color>
+              <color sid="diffuse">0.09563077 0.09563077 0.09563077 1</color>
             </diffuse>
             <specular>
               <color sid="specular">0.5 0.5 0.5 1</color>
@@ -116,7 +116,7 @@
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="Circle" name="Circle" type="NODE">
-        <matrix sid="transform">7.151397 7.163995 0 -0.1017552 -7.163995 7.151397 0 -0.1276537 0 0 10.12251 21.09712 0 0 0 1</matrix>
+        <matrix sid="transform">7.151397 7.163995 0 -0.1017552 -7.163995 7.151397 0 -0.1276537 0 0 10.12251 0.7718769 0 0 0 1</matrix>
         <instance_geometry url="#Circle-mesh" name="Circle">
           <bind_material>
             <technique_common>
