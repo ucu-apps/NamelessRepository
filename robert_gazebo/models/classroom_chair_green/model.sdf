@@ -7,7 +7,7 @@
             <visual name="visual">
                 <geometry>
                     <mesh>
-                        <uri>model://robert_gazebo/meshes/classroom_chair_visual.dae</uri>
+                        <uri>model://robert_gazebo/meshes/classroom_chair_green_visual.dae</uri>
                         <scale>100 100 100</scale>
                     </mesh>
                 </geometry>
