@@ -1,17 +1,25 @@
 <?xml version='1.0'?>
 <sdf version='1.5'>
-  <model name="p3_henry_ford">
+  <model name="p2_oprah_winfrey">
     <pose>0 0 0 0 0 0</pose>
     <static>true</static>
     <link name='model_body'>
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://robert_gazebo/meshes/pictures/p3_henry_ford.dae</uri>
+            <uri>model://robert_gazebo/meshes/pictures/p2_oprah_winfrey.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
          </geometry>
       </visual>
+
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>0.58 0.02 0.42</size>
+          </box>
+        </geometry>
+      </collision>
     </link>
   </model>
 </sdf>

@@ -1,17 +1,25 @@
 <?xml version='1.0'?>
 <sdf version='1.5'>
-  <model name="p5_myroslav_popovych">
+  <model name="p8_gregory_skovoroda">
     <pose>0 0 0 0 0 0</pose>
     <static>true</static>
     <link name='model_body'>
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://robert_gazebo/meshes/pictures/p5_myroslav_popovych.dae</uri>
+            <uri>model://robert_gazebo/meshes/pictures/p8_gregory_skovoroda.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
          </geometry>
       </visual>
+
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>0.58 0.02 0.42</size>
+          </box>
+        </geometry>
+      </collision>
     </link>
   </model>
 </sdf>
