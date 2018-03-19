@@ -23,7 +23,7 @@ docker pull ucuapps/robert:latest
 ```
  7. Use the following command to start Docker container
 ```bash
-docker run -it --name robert_dev -e DISPLAY -e LOCAL_USER_ID=$(id -u) -v /tmp/.X11-unix:/tmp/.X11-unix:rw ucuapps/robert:latest
+docker run -it --name robert_dev -p 8080:8080 -e DISPLAY -e LOCAL_USER_ID=$(id -u) -v /tmp/.X11-unix:/tmp/.X11-unix:rw ucuapps/robert:latest
 ```
  8. Black window of [Terminator](https://gnometerminator.blogspot.com/p/introduction.html) UI console will appear after some time.
  9. You can use it's features to [split terminal window](https://linux.die.net/man/1/terminator) into smaller terminals and run few commands in parallel (Ctrl+Shift+E).
@@ -106,8 +106,10 @@ Launch gmapping node
 roslaunch robert_launch gmapping.launch
 ```
 
-Drive arround environment to build map using [the following keys](http://wiki.ros.org/stdr_simulator/Tutorials/Teleop%20with%20teleop_twist_keyboard#Teleoperate_your_robot.21).
-*Please note that console window with gmapping launch file should be active in order to teleoperate robot using keys*
+Start [Robot Steering RQT plugin](http://wiki.ros.org/rqt_robot_steering) to drive robot around
+```bash
+rosrun rqt_robot_steering rqt_robot_steering 
+```
 
 Save map to file
 ```bash
