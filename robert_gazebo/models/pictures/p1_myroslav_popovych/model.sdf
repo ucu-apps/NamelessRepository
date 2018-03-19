@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.5'>
   <model name="p1_myroslav_popovych">
-    <pose>0 0 0 0 0 0</pose>
+    <pose>0 0 0 90 0 0</pose>
     <static>true</static>
     <link name='model_body'>
       <visual name="visual">
