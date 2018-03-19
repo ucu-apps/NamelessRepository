@@ -18,7 +18,7 @@
 
     <include>
       <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair</name>
+      <name>classroom_chair_2</name>
       <pose>5 5 0 0 0 0</pose>
     </include>
 
