@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <name>robert_beverage</name>
+  <version>0.0.1</version>
+  <description>The robert_beverage package</description>
+
+  <maintainer email="ucuapps@todo.todo">UCU APPS</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>rospy</run_depend>
+</package>

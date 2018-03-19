@@ -1,0 +1,5 @@
+#!/usr/bin/env python
+import rospy
+
+rospy.init_node('web_server_node')
+rospy.loginfo('Inside web_server script')
