@@ -13,7 +13,7 @@
     <include>
       <uri>model://robert_gazebo/models/pictures/p1_myroslav_popovych</uri>
       <name>p1</name>
-      <pose>-5 -5 0 0 0 0</pose>
+      <pose>-3 -3 0 -1.57075 0 0</pose>
     </include>
 
     <gui fullscreen='0'>
