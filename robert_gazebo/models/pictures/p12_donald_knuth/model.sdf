@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version='1.5'>
   <model name="p12_donald_knuth">
-    <pose>0 0 0 1.57075 0 0</pose>
+    <pose>0 0 0 0 0 0</pose>
     <static>true</static>
     <link name='model_body'>
       <visual name="visual">
@@ -16,7 +16,7 @@
       <collision name='collision'>
         <geometry>
           <box>
-            <size>0.61 0.02 0.44</size>
+            <size>0.44 0.61 0.01</size>
           </box>
         </geometry>
       </collision>
