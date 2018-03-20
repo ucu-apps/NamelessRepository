@@ -11,9 +11,87 @@
     </include>
 
     <include>
-      <uri>model://robert_gazebo/models/pictures/p1_myroslav_popovych</uri>
-      <name>p1</name>
-      <pose>-3 -3 0 -1.57075 0 0</pose>
+    <uri>model://robert_gazebo/models/pictures/p14_oscar_wilde</uri>
+    <name>p14_oscar_wilde</name>
+    <pose>-3 2 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p9_adrian_slywotzky</uri>
+        <name>p9_adrian_slywotzky</name>
+        <pose>-3 -2 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p8_gregory_skovoroda</uri>
+        <name>p8_gregory_skovoroda</name>
+        <pose>-3 3 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p3_lubomyr_romankiw</uri>
+        <name>p3_lubomyr_romankiw</name>
+        <pose>-3 -3 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p4_viktor_morozov</uri>
+        <name>p4_viktor_morozov</name>
+        <pose>-3 4 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p6_lina_kostenko</uri>
+        <name>p6_lina_kostenko</name>
+        <pose>-3 -4 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p13_borys_gudziak</uri>
+        <name>p13_borys_gudziak</name>
+        <pose>-3 5 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p11_sheryl_sandberg</uri>
+        <name>p11_sheryl_sandberg</name>
+        <pose>-3 -5 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p7_henry_ford</uri>
+        <name>p7_henry_ford</name>
+        <pose>-3 6 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p5_mahatma_gandhi</uri>
+        <name>p5_mahatma_gandhi</name>
+        <pose>-3 -6 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p2_oprah_winfrey</uri>
+        <name>p2_oprah_winfrey</name>
+        <pose>-3 7 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p12_donald_knuth</uri>
+        <name>p12_donald_knuth</name>
+        <pose>-3 -7 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p1_myroslav_popovych</uri>
+        <name>p1_myroslav_popovych</name>
+        <pose>-3 8 0 -1.57075 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/pictures/p10_bohdan_hawrylyshyn</uri>
+        <name>p10_bohdan_hawrylyshyn</name>
+        <pose>-3 -8 0 -1.57075 0 0</pose>
     </include>
 
     <gui fullscreen='0'>
