@@ -1,4 +1,4 @@
-office.world<?xml version="1.0" ?>
+<?xml version="1.0" ?>
 <sdf version="1.4">
 
   <world name="default">
@@ -11,9 +11,9 @@ office.world<?xml version="1.0" ?>
     </include>
 
     <include>
-      <uri>model://willowgarage</uri>
-      <name>willowgarage</name>
-      <pose>-17 -15.5 0 0 0 0</pose>
+      <uri>model://robert_gazebo/models/lectorium_chair_orange</uri>
+      <name>lectorium_chair_orange</name>
+      <pose>-5 -5 0 0 0 0</pose>
     </include>
 
     <gui fullscreen='0'>
