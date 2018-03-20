@@ -25,14 +25,14 @@
             <inertial>
                 <pose> 0 0 0 0 0 0</pose>
                 <inertia>
-                    <ixx>0</ixx>
+                    <ixx>0.35</ixx>
                     <ixy>0</ixy>
                     <ixz>0</ixz>
-                    <iyy>0</iyy>
+                    <iyy>1.3</iyy>
                     <iyz>0</iyz>
-                    <izz>0</izz>
+                    <izz>0.98</izz>
                 </inertia>
-                <mass>0</mass>
+                <mass>8.0</mass>
             </inertial>
         </link>
     </model>
