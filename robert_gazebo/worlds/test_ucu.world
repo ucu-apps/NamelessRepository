@@ -41,21 +41,9 @@
     </include>
 
     <include>
-      <uri>model://robert_gazebo/models/puffy</uri>
-      <name>puffy</name>
-      <pose>-5 7 0 0 0 0</pose>
-    </include>
-
-    <include>
       <uri>model://robert_gazebo/models/soft_armchair</uri>
       <name>soft_armchair</name>
       <pose>5 5 0 0 0 0</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/APPS_letters</uri>
-      <name>APPS_letters</name>
-      <pose>5 3 0 0 0 0</pose>
     </include>
 
     <gui fullscreen='0'>
