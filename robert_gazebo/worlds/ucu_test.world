@@ -13,7 +13,7 @@
     <include>
         <uri>model://robert_gazebo/models/APPS_letters</uri>
         <name>APPS_letters</name>
-        <pose>-5 -5 0 0 0 0</pose>
+        <pose>-5 -5 1 0 0 0</pose>
     </include>
 
     <gui fullscreen='0'>
