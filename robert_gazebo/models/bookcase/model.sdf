@@ -21,6 +21,8 @@
           </mesh>
         </geometry>
       </collision>
+
+      <inertial></inertial>
     </link>
   </model>
 </sdf>
