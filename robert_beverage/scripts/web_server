@@ -1,21 +1,31 @@
 #!/usr/bin/env python
 import rospy
-from http.server import *
+import socket
+import SocketServer
+import SimpleHTTPServer
 
 rospy.init_node('web_server_node')
 rospy.loginfo('Inside web_server script')
 
-class RequestHandler(BaseHTTPRequestHandler):
+HOST = socket.gethostname()
+PORT = 8080
+address = ("", PORT)
+
+
+class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_GET(self):
-        if 'beverage' in self.path:
-            x, y = self.path[10:-1].split("&")
-            x = int(x.strip("x="))
-            y = int(y.strip("y="))
-            print("x: {}\ny= {}".format(x, y))
+        if self.path.startswith("/beverage"):
+            info = self.path[9:].strip("/", "x=", "y=")
+            x, y = int(info.split("&"))
+            print "x={}\ny={}".format(x, y)
+        else:
+            pass
+        return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
-def run(server_class=HTTPServer, handler_class=RequestHandler):
-    server_address = ('', 8080)
-    httpd = server_class(server_address, handler_class)
-    httpd.serve_forever()
+SocketServer.TCPServer.allow_reuse_address=True
+httpd = SocketServer.TCPServer(address, RequestHandler)
 
-run()
+print("hostname is", HOST)
+print("serving at port", PORT)
+httpd.serve_forever()
+httpd.shutdown()
