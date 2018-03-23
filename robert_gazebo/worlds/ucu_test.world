@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+        <name>table_rectangular_high</name>
+        <pose>-5 -5 0 0 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/table_rectangular_low</uri>
+        <name>table_rectangular_low</name>
+        <pose>-5 -4 0 0 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/locker_008</uri>
+        <name>locker_008</name>
+        <pose>-5 -2 0 0 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
+        <name>soft_armchair_violet</name>
+        <pose>5 -2 0 0 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/soft_armchair/yellow</uri>
+        <name>soft_armchair_yellow</name>
+        <pose>5 -1 0 0 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+        <name>soft_armchair_green</name>
+        <pose>5 0 0 0 0 0</pose>
+    </include>
+
+    <include>
+        <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+        <name>soft_armchair_orange</name>
+        <pose>5 1 0 0 0 0</pose>
+    </include>
+
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>4.927360 -4.376610 3.740080 0.000000 0.275643 2.356190</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+
+  </world>
+</sdf>
