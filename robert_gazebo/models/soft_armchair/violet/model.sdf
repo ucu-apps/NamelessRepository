@@ -1,13 +1,13 @@
 <?xml version='1.0'?>
 <sdf version='1.5'>
-  <model name="locker_008">
+  <model name="soft_chair">
     <pose>0 0 0 0 0 0</pose>
     <static>false</static>
     <link name='model_body'>
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://robert_gazebo/meshes/locker_008_visual.dae</uri>
+            <uri>model://robert_gazebo/meshes/soft_chair_visual_violet.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
          </geometry>
@@ -16,7 +16,7 @@
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://robert_gazebo/meshes/locker_008_collision.dae</uri>
+            <uri>model://robert_gazebo/meshes/soft_chair_collision.dae</uri>
             <scale>1 1 1</scale>
           </mesh>
         </geometry>
@@ -25,16 +25,15 @@
       <inertial>
         <pose> 0 0 0 0 0 0</pose>
         <inertia>
-          <ixx>0.69</ixx>
+          <ixx>1.225</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>1.19</iyy>
+          <iyy>1.1</iyy>
           <iyz>0</iyz>
-          <izz>0.78</izz>
+          <izz>0.8625</izz>
         </inertia>
-        <mass>10.0</mass>
+        <mass>15.0</mass>
       </inertial>
     </link>
   </model>
 </sdf>
-
