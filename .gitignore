@@ -83,4 +83,6 @@ qtcreator-*
 # FreeCAD backup files
 *.fcstd1
 
+*.blend?
+
 .DS_Store
