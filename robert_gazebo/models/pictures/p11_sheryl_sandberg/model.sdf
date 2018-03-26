@@ -1,0 +1,38 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name="p11_sheryl_sandberg">
+    <pose>0 0 0 0 0 0</pose>
+    <static>true</static>
+    <link name='model_body'>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://robert_gazebo/meshes/pictures/p11_sheryl_sandberg.dae</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+         </geometry>
+      </visual>
+
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>0.44 0.61 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <inertial>
+        <pose> 0 0 0 0 0 0</pose>
+        <inertia>
+          <ixx>0.016</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.008</iyy>
+          <iyz>0</iyz>
+          <izz>0.024</izz>
+        </inertia>
+        <mass>0.5</mass>
+      </inertial>
+    </link>
+  </model>
+</sdf>
