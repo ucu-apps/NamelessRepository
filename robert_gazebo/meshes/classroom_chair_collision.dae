@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.79.0 commit date:2017-09-11, commit time:10:43, hash:5bd8ac9</authoring_tool>
     </contributor>
-    <created>2018-03-09T12:13:19</created>
-    <modified>2018-03-09T12:13:19</modified>
+    <created>2018-03-26T10:11:49</created>
+    <modified>2018-03-26T10:11:49</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -1627,7 +1627,7 @@
         <rotate sid="rotationZ">0 0 1 0</rotate>
         <rotate sid="rotationY">0 1 0 0</rotate>
         <rotate sid="rotationX">1 0 0 0</rotate>
-        <scale sid="scale">1 1 1</scale>
+        <scale sid="scale">17.41062 17.41062 17.41062</scale>
         <instance_geometry url="#Classroom_Chair_001-mesh" name="Classroom_Chair_001"/>
       </node>
     </visual_scene>
