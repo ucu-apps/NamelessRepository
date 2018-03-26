@@ -3,6 +3,7 @@ import rospy
 import socket
 import SocketServer
 import SimpleHTTPServer
+from std_msgs.msg import String
 
 rospy.init_node('web_server_node')
 rospy.loginfo('Inside web_server script')
@@ -16,10 +17,14 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path.startswith("/beverage"):
             info = self.path.strip("/")[9:]
-            x, y = info.split("&")
-            print "{}\n{}".format(x, y)
-        else:
-            pass
+        pub = rospy.Publisher('chatter', String, queue_size=10)
+        rospy.init_node('coordinates', anonymous=True)
+        rate = rospy.Rate(10)
+        while not rospy.is_shutdown():
+            str = "%s\t%s" % info.split("&")
+            rospy.loginfo(str)
+            pub.publish(str)
+            rate.sleep()
         return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
 SocketServer.TCPServer.allow_reuse_address=True
