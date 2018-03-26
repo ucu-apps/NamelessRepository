@@ -8,7 +8,7 @@
                 <geometry>
                     <mesh>
                         <uri>model://robert_gazebo/meshes/APPS_letters_visual.dae</uri>
-                        <scale>5 5 5</scale>
+                        <scale>1 1 1</scale>
                     </mesh>
                 </geometry>
             </visual>
@@ -17,7 +17,7 @@
                 <geometry>
                     <mesh>
                         <uri>model://robert_gazebo/meshes/APPS_letters_collision.dae</uri>
-                        <scale>5 5 5</scale>
+                        <scale>1 1 1</scale>
                     </mesh>
                 </geometry>
             </collision>

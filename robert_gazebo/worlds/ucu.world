@@ -1,103 +1,20 @@
 <sdf version='1.6'>
   <world name='default'>
-    <model name='APPS'>
-      <pose frame=''>3 3 1 0 -0 1.57</pose>
-      <static>1</static>
-      <link name='model_body'>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://robert_gazebo/meshes/APPS_letters_visual.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://robert_gazebo/meshes/APPS_letters_collision.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <inertial>
-          <pose frame=''>0 0 0 0 -0 0</pose>
-          <inertia>
-            <ixx>4.44</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.47</iyy>
-            <iyz>0</iyz>
-            <izz>4.05</izz>
-          </inertia>
-          <mass>10</mass>
-        </inertial>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
-    <model name='locker_008_014_015'>
-      <pose frame=''>3 4 1 0 -0 0</pose>
-      <static>0</static>
-      <link name='model_body'>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <uri>model://robert_gazebo/meshes/locker_008_visual.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-        </visual>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>model://robert_gazebo/meshes/locker_008_collision.dae</uri>
-              <scale>1 1 1</scale>
-            </mesh>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <inertial>
-          <pose frame=''>0 0 0 0 -0 0</pose>
-          <inertia>
-            <ixx>0.69</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>1.19</iyy>
-            <iyz>0</iyz>
-            <izz>0.78</izz>
-          </inertia>
-          <mass>10</mass>
-        </inertial>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
+
+    <include>
+      <uri>model://robert_gazebo/models/APPS_letters</uri>
+      <name>APPS</name>
+      <pose>3 3 1 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/locker_008</uri>
+      <name>locker_008_014_015</name>
+      <pose>3 4 1 0 0 0</pose>
+      <pose>3 5 1 0 0 0</pose>
+      <pose>3 6 1 0 0 0</pose>
+    </include>
+
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
       <pose frame=''>0 0 10 0 -0 0</pose>
@@ -886,20 +803,10 @@
       <static>1</static>
     </model>
     <state world_name='default'>
-      <sim_time>1073 711000000</sim_time>
-      <real_time>96 936709953</real_time>
-      <wall_time>1522048047 789197162</wall_time>
-      <iterations>81886</iterations>
-      <model name='APPS'>
-        <pose frame=''>11.0104 -4.66939 1.49508 0 -0 1.57</pose>
-        <scale>1 1 1</scale>
-        <link name='model_body'>
-          <pose frame=''>11.0104 -4.66939 1.49508 0 -0 1.57</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
+      <sim_time>836 514000000</sim_time>
+      <real_time>38 720547646</real_time>
+      <wall_time>1520855387 838072314</wall_time>
+      <iterations>31376</iterations>
       <model name='Glass_walls'>
         <pose frame=''>0.66554 5.08189 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -1060,16 +967,6 @@
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='locker_008_014_015'>
-        <pose frame=''>2.38987 4.99542 0.45077 0 -1.1e-05 1.45086</pose>
-        <scale>1 1 1</scale>
-        <link name='model_body'>
-          <pose frame=''>2.38987 4.99542 0.45077 0 -1.1e-05 1.45086</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.03445 -0.609839 -8.75012 0.786084 -0.060468 -0.001686</acceleration>
-          <wrench>-0.344498 -6.09839 -87.5012 0 -0 0</wrench>
         </link>
       </model>
       <model name='ucu_basic_frame.world'>
@@ -1484,7 +1381,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>15.0625 6.90017 3.64266 -0 0.3738 -1.88427</pose>
+        <pose frame=''>20.1596 -0.011978 2.59212 0 0.1058 3.01891</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
