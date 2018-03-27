@@ -11,15 +11,15 @@ rospy.loginfo('Inside web_server script')
 HOST = socket.gethostname()
 PORT = 8080
 address = ("", PORT)
+pub = rospy.Publisher('chatter', String, queue_size=10)
+rospy.init_node('coordinates', anonymous=True)
+rate = rospy.Rate(10)
 
 
 class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path.startswith("/beverage"):
             info = self.path.strip("/")[9:]
-        pub = rospy.Publisher('chatter', String, queue_size=10)
-        rospy.init_node('coordinates', anonymous=True)
-        rate = rospy.Rate(10)
         while not rospy.is_shutdown():
             str = "%s\t%s" % info.split("&")
             rospy.loginfo(str)
