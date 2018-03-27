@@ -2,6 +2,10 @@
   <world name='default'>
 
     <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
       <uri>model://robert_gazebo/models/APPS_letters</uri>
       <name>APPS</name>
       <pose>11.01 -4.67 1.49 0 0 1.57</pose>
