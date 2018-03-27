@@ -12,7 +12,7 @@ HOST = socket.gethostname()
 PORT = 8080
 address = ("", PORT)
 pub = rospy.Publisher('chatter', String, queue_size=10)
-rospy.init_node('coordinates', anonymous=True)
+rospy.init_node('talker', anonymous=True)
 rate = rospy.Rate(10)
 
 
@@ -21,9 +21,9 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
         if self.path.startswith("/beverage"):
             info = self.path.strip("/")[9:]
         while not rospy.is_shutdown():
-            str = "%s\t%s" % info.split("&")
-            rospy.loginfo(str)
-            pub.publish(str)
+            str_ = "%s\t%s" % info.split("&")
+            rospy.loginfo(str_)
+            pub.publish(str_)
             rate.sleep()
         return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
