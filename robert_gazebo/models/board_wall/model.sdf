@@ -21,6 +21,18 @@
                     </mesh>
                 </geometry>
             </collision>
+            <inertial>
+                <pose>0 0 0 0 0 0</pose>
+                <inertia>
+                    <ixx>2.5</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>0.5</iyy>
+                    <iyz>0</iyz>
+                    <izz>2.0</izz>
+                </inertia>
+                <mass>6.0</mass>
+            </inertial>
         </link>
     </model>
 </sdf>
