@@ -11,7 +11,7 @@
     </include>
 
     <include>
-      <uri>model://robert_gazebo/models/classroom_chair_green</uri>
+      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
       <name>classroom_chair</name>
       <pose>1 1 1 0 0 1</pose>
     </include>
