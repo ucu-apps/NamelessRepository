@@ -1,38 +1,38 @@
 <?xml version='1.0'?>
 <sdf version='1.5'>
-  <model name="bookcase">
-    <pose>0 0 0 0 0 0</pose>
-    <static>true</static>
-    <link name='model_body'>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://robert_gazebo/meshes/bookcase.dae</uri>
-            <scale>1 1 1</scale>
-          </mesh>
-         </geometry>
-      </visual>
+    <model name="bookcase">
+        <pose>0 0 0 0 0 0</pose>
+        <static>true</static>
+        <link name='model_body'>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://robert_gazebo/meshes/bookcase.dae</uri>
+                        <scale>1 1 1</scale>
+                    </mesh>
+                </geometry>
+            </visual>
 
-      <collision name="collision">
-        <geometry>
-          <mesh>
-            <uri>model://robert_gazebo/meshes/collision_bookcase.dae</uri>
-            <scale>1 1 1</scale>
-          </mesh>
-        </geometry>
-      </collision>
-       <inertial>
-        <pose> 0 0 0 0 0 0</pose>
-        <inertia>
-          <ixx>4.16</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>4.09</iyy>
-          <iyz>0</iyz>
-          <izz>0.25</izz>
-        </inertia>
-        <mass>12.0</mass>
-      </inertial>
-    </link>
-  </model>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://robert_gazebo/meshes/collision_bookcase.dae</uri>
+                        <scale>1 1 1</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+            <inertial>
+                <pose>0 0 0 0 0 0</pose>
+                <inertia>
+                    <ixx>4.16</ixx>
+                    <ixy>0</ixy>
+                    <ixz>0</ixz>
+                    <iyy>4.09</iyy>
+                    <iyz>0</iyz>
+                    <izz>0.25</izz>
+                </inertia>
+                <mass>12.0</mass>
+            </inertial>
+        </link>
+    </model>
 </sdf>
