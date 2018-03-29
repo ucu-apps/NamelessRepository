@@ -19,9 +19,9 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path.startswith("/beverage"):
             info = self.path.strip("/")[9:]
-            x, y = info.split("&")
+            coor = dict(info.split("=").split("&"))
         while not rospy.is_shutdown():
-            str_ = "%s\t%s" % (x, y)
+            str_ = "x=%s\ty=%s" % (coor['x'], coor['y'])
             rospy.loginfo(str_)
             pub.publish(str_)
             rate.sleep()
