@@ -56,19 +56,19 @@
     <include>
         <uri>model://robert_gazebo/models/pictures/p5_mahatma_gandhi</uri>
         <name>p5_mahatma_gandhi</name>
-        <pose>2.96 -4.35 1.512 -1.57 0 -0.02</pose>
+        <pose>2.65 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p6_lina_kostenko</uri>
         <name>p6_lina_kostenko</name>
-        <pose>2.96 -4.35 1.512 -1.57 0 -0.02</pose>
+        <pose>0.87 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p7_henry_ford</uri>
         <name>p7_henry_ford</name>
-        <pose>2.19 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-0.04 -4.28 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
@@ -80,37 +80,37 @@
     <include>
         <uri>model://robert_gazebo/models/pictures/p9_adrian_slywotzky</uri>
         <name>p9_adrian_slywotzky</name>
-        <pose>0.69 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-2.55 -4.3 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p10_bohdan_hawrylyshyn</uri>
         <name>p10_bohdan_hawrylyshyn</name>
-        <pose>0.69 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-3.3 -4.3 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p11_sheryl_sandberg</uri>
         <name>p11_sheryl_sandberg</name>
-        <pose>0.69 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-4.0 -4.3 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p12_donald_knuth</uri>
         <name>p12_donald_knuth</name>
-        <pose>0.69 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-4.95 -4.3 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p13_borys_gudziak</uri>
         <name>p13_borys_gudziak</name>
-        <pose>0.69 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-5.8 -4.3 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p14_oscar_wilde</uri>
         <name>p14_oscar_wilde</name>
-        <pose>0.69 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-6.62 -4.3 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
@@ -139,9 +139,22 @@
 
     <include>
       <uri>model://robert_gazebo/models/table_rectangular_high</uri>
-      <name>table_008</name>
-      <pose>3 -5 0 0 0 0</pose>
+      <name>table_008_1</name>
+      <pose>0.2 -6.2 0.55 0 0 -1.6</pose>
     </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_008_2</name>
+      <pose>-1.28 -6.2 0.55 0 0 -1.6</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_007_1</name>
+      <pose>5.28 -5.8 0.55 0 0 0</pose>
+    </include>
+
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
