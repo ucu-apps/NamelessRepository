@@ -1,13 +1,13 @@
 <?xml version='1.0'?>
 <sdf version='1.5'>
-    <model name="fire_rescue">
+    <model name="fire_rescue_box">
         <pose>0 0 0 0 0 0</pose>
         <static>true</static>
         <link name='model_body'>
             <visual name="visual">
                 <geometry>
                     <mesh>
-                        <uri>model://robert_gazebo/meshes/visual_fire_rescue_box.dae</uri>
+                        <uri>model://robert_gazebo/meshes/fire_rescue_box_visual.dae</uri>
                         <scale>1 1 1</scale>
                     </mesh>
                 </geometry>
@@ -16,7 +16,7 @@
             <collision name="collision">
                 <geometry>
                     <mesh>
-                        <uri>model://robert_gazebo/meshes/collision_fire_rescue_box.dae</uri>
+                        <uri>model://robert_gazebo/meshes/fire_rescue_box_collision.dae</uri>
                         <scale>1 1 1</scale>
                     </mesh>
                 </geometry>
