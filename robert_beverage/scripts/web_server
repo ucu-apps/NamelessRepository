@@ -11,20 +11,14 @@ rospy.loginfo('Inside web_server script')
 HOST = socket.gethostname()
 PORT = 8080
 address = ("", PORT)
-pub = rospy.Publisher('chatter', String, queue_size=10)
-rate = rospy.Rate(10)
-
 
 class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path.startswith("/beverage"):
             info = self.path.strip("/")[9:]
-            coor = dict(info.split("=").split("&"))
-        while not rospy.is_shutdown():
-            str_ = "x=%s\ty=%s" % (coor['x'], coor['y'])
-            rospy.loginfo(str_)
-            pub.publish(str_)
-            rate.sleep()
+            coor = dict(x.split("=")for x in info.split("&"))
+            rospy.loginfo("x=%s\ty=%s", coor['x'], coor['y'])
+        self.path = "/workspace/robert/base/src/robert/robert_beverage/scripts/index.html"
         return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
 SocketServer.TCPServer.allow_reuse_address=True
