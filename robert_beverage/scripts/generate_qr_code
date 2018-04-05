@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 import rospy
-import python-qrencode
+import qrencode
+import argparse
 
 rospy.init_node('generate_qr_code_node')
 rospy.loginfo('Inside generate_qr_code script')
 
-while not rospy.is_shutdown():
-    x, y, host, port, filename = raw_input("Enter arguments: ").split()
-    str_ = "http://{}:{}/beverage?x={}&y={}".format(host, port, x, y)
-    qr = python-qrencode.encode(str_)
+parser = argparse.ArgumentParser(description='generate qr-code')
+parser.add_argument('data', metavar='D', type=str, nargs=5)
+x, y, host, port, filename = parser.parse_args().data
+str_ = "http://{}:{}/beverage?x={}&y={}".format(host, port, x, y)
+qr = qrencode.encode_scaled(str_, size=100)[2]
+qr.save(filename + ".png")
+rospy.loginfo('Done.')
