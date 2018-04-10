@@ -9192,27 +9192,51 @@
     </include>
 
     <include>
+      <uri>model://robert_gazebo/models/locker_008</uri>
+      <name>locker_009_1</name>
+      <pose>-6.71 -7.24 0.45 0 0 -1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/locker_008</uri>
+      <name>locker_009_2</name>
+      <pose>-6.71 -8.15 0.45 0 0 -1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/locker_008</uri>
+      <name>locker_009_3</name>
+      <pose>-8.9 -9.94 0.45 0 0 -3.14</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/locker_008</uri>
+      <name>locker_009_4</name>
+      <pose>-8.1 -9.94 0.45 0 0 -3.14</pose>
+    </include>
+
+    <include>
       <uri>model://robert_gazebo/models/pictures/p1_myroslav_popovych</uri>
       <name>p1_myroslav_popovych</name>
-      <pose>7.69 -4.3 1.72 -1.57 0 -0.02</pose>
+      <pose>7.69 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/pictures/p2_oprah_winfrey</uri>
       <name>p2_oprah_winfrey</name>
-        <pose>6.89 -4.3 1.72 -1.57 0 0</pose>
+        <pose>6.89 -4.35 1.72 -1.57 0 0</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p3_lubomyr_romankiw</uri>
         <name>p3_lubomyr_romankiw</name>
-        <pose>6.09 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>6.09 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p4_viktor_morozov</uri>
         <name>p4_viktor_morozov</name>
-        <pose>5.29 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>5.29 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
@@ -9224,55 +9248,55 @@
     <include>
         <uri>model://robert_gazebo/models/pictures/p6_lina_kostenko</uri>
         <name>p6_lina_kostenko</name>
-        <pose>0.87 -4.35 1.72 -1.57 0 -0.02</pose>
+        <pose>1.75 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p7_henry_ford</uri>
         <name>p7_henry_ford</name>
-        <pose>-0.04 -4.28 1.72 -1.57 0 -0.02</pose>
+        <pose>0.85 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p8_gregory_skovoroda</uri>
         <name>p8_gregory_skovoroda</name>
-        <pose>1.39 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-0.04 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p9_adrian_slywotzky</uri>
         <name>p9_adrian_slywotzky</name>
-        <pose>-2.55 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-2.55 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p10_bohdan_hawrylyshyn</uri>
         <name>p10_bohdan_hawrylyshyn</name>
-        <pose>-3.3 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-3.36 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p11_sheryl_sandberg</uri>
         <name>p11_sheryl_sandberg</name>
-        <pose>-4.0 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-4.18 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p12_donald_knuth</uri>
         <name>p12_donald_knuth</name>
-        <pose>-4.95 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-4.99 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p13_borys_gudziak</uri>
         <name>p13_borys_gudziak</name>
-        <pose>-5.8 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-5.8 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
         <uri>model://robert_gazebo/models/pictures/p14_oscar_wilde</uri>
         <name>p14_oscar_wilde</name>
-        <pose>-6.62 -4.3 1.72 -1.57 0 -0.02</pose>
+        <pose>-6.62 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
@@ -9289,8 +9313,26 @@
 
     <include>
       <uri>model://robert_gazebo/models/puffy/green</uri>
-      <name>puffy_green</name>
+      <name>puffy_green_1</name>
       <pose>-4 3 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/puffy/green</uri>
+      <name>puffy_green_2</name>
+      <pose>-4 2 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/puffy/orange</uri>
+      <name>puffy_orange_1</name>
+      <pose>-3 3 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/puffy/orange</uri>
+      <name>puffy_orange_2</name>
+      <pose>-3 2 0 0 0 0</pose>
     </include>
 
     <include>
@@ -9390,147 +9432,249 @@
     </include>
 
     <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_015_1</name>
+      <pose>3.89 4.99 0.55 0 0 -1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_015_2</name>
+      <pose>5.89 4.99 0.55 0 0 -1.57</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_014_1</name>
+      <pose>-5.11 5.8 0.55 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_014_2</name>
+      <pose>-6.61 5.8 0.55 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_009_1</name>
+      <pose>-8.8 -6.5 0.55 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_009_2</name>
+      <pose>-8.1 -7.9 0.55 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_009_3</name>
+      <pose>-8.8 -6.5 0.55 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_009_4</name>
+      <pose>-8.1 -7.9 0.55 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_009_5</name>
+      <pose>-9.77 -8.34 0.55 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_it_space_high_1</name>
+      <pose>4 2 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
+      <name>table_it_space_high_2</name>
+      <pose>4 3 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_low</uri>
+      <name>table_it_space_1</name>
+      <pose>1 1 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/table_rectangular_low</uri>
+      <name>table_it_space_2</name>
+      <pose>3 1 0 0 0 0</pose>
+    </include>
+
+    <include>
       <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
       <name>soft_armchair_violet_1</name>
-      <pose>14.88 2.35 0.38 0 0 1.57</pose>
+      <pose>14.88 1.67 0.38 0 0 1.57</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
       <name>soft_armchair_violet_2</name>
-      <pose>14.88 1.35 0.38 0 0 1.57</pose>
+      <pose>14.88 -2.26 0.38 0 0 1.57</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
       <name>soft_armchair_violet_3</name>
-      <pose>14.88 0.35 0.38 0 0 1.57</pose>
+      <pose>13.69 -4.43 0.38 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
       <name>soft_armchair_violet_4</name>
-      <pose>14.88 -1.35 0.38 0 0 1.57</pose>
+      <pose>4.91 -9.93 0.38 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
       <name>soft_armchair_violet_5</name>
-      <pose>14.88 -2.35 0.38 0 0 1.57</pose>
+      <pose>7 -4.09 0.38 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
       <name>soft_armchair_violet_6</name>
-      <pose>14.88 -3.35 0.38 0 0 1.57</pose>
+      <pose>1.63 5.69 0.38 0 0 3.03</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
+      <name>soft_armchair_violet_7</name>
+      <pose>-11.32 1.65 0.38 0 0 -1.82</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/green</uri>
       <name>soft_armchair_green_1</name>
-      <pose>12.88 -3.35 0.38 0 0 1.57</pose>
+      <pose>14.48 2.81 0.38 0 0 3.14</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/green</uri>
       <name>soft_armchair_green_2</name>
-      <pose>12.88 -2.35 0.38 0 0 1.57</pose>
+      <pose>14.88 0.17 0.38 0 0 1.57</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/green</uri>
       <name>soft_armchair_green_3</name>
-      <pose>12.88 -1.35 0.38 0 0 1.57</pose>
+      <pose>14.88 -2.96 0.38 0 0 1.57</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/green</uri>
       <name>soft_armchair_green_4</name>
-      <pose>12.88 -0.35 0.38 0 0 1.57</pose>
+      <pose>6.2 -4.09 0.38 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/green</uri>
       <name>soft_armchair_green_5</name>
-      <pose>12.88 1.35 0.38 0 0 1.57</pose>
+      <pose>5.4 -4.09 0.38 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/green</uri>
       <name>soft_armchair_green_6</name>
-      <pose>12.88 2.35 0.38 0 0 1.57</pose>
+      <pose>2.47 -4.01 0.38 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>soft_armchair_green_7</name>
+      <pose>-11.32 2.65 0.38 0 0 -1.82</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
       <name>soft_armchair_orange_1</name>
-      <pose>10.88 2.35 0.38 0 0 1.57</pose>
+      <pose>14.88 0.87 0.38 0 0 1.57</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
       <name>soft_armchair_orange_2</name>
-      <pose>10.88 1.35 0.38 0 0 1.57</pose>
+      <pose>14.88 -1.86 0.38 0 0 1.57</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
       <name>soft_armchair_orange_3</name>
-      <pose>10.88 0.35 0.38 0 0 1.57</pose>
+      <pose>12.99 -4.43 0.38 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
       <name>soft_armchair_orange_4</name>
-      <pose>10.88 -1.35 0.38 0 0 1.57</pose>
+      <pose>5.61 -9.93 0.38 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
       <name>soft_armchair_orange_5</name>
-      <pose>10.88 -2.35 0.38 0 0 1.57</pose>
+      <pose>1.67 -4.01 0.38 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
       <name>soft_armchair_orange_6</name>
-      <pose>10.88 -3.35 0.38 0 0 1.57</pose>
+      <pose>-11.32 4.65 0.38 0 0 -1.82</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>soft_armchair_orange_7</name>
+      <pose>-3.07 5.45 0.38 0 0 -1.65</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/yellow</uri>
       <name>soft_armchair_yellow_1</name>
-      <pose>8.88 2.35 0.38 0 0 1.57</pose>
+      <pose>14.88 -0.53 0.38 0 0 1.57</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/yellow</uri>
       <name>soft_armchair_yellow_2</name>
-      <pose>8.88 1.35 0.38 0 0 1.57</pose>
+      <pose>13.78 2.81 0.38 0 0 3.14</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/yellow</uri>
       <name>soft_armchair_yellow_3</name>
-      <pose>8.88 0.35 0.38 0 0 1.57</pose>
+      <pose>14.88 -1.56 0.38 0 0 1.57</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/yellow</uri>
       <name>soft_armchair_yellow_4</name>
-      <pose>8.88 -1.35 0.38 0 0 1.57</pose>
+      <pose>7.8 -4.09 0.38 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/yellow</uri>
       <name>soft_armchair_yellow_5</name>
-      <pose>8.88 -2.35 0.38 0 0 1.57</pose>
+      <pose>2.05 -1.88 0.38 0 0 3.14</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/yellow</uri>
       <name>soft_armchair_yellow_6</name>
-      <pose>8.88 -3.35 0.38 0 0 1.57</pose>
+      <pose>-3 6.17 0.38 0 0 -1.65</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/yellow</uri>
+      <name>soft_armchair_yellow_7</name>
+      <pose>-11.32 3.65 0.38 0 0 -1.82</pose>
     </include>
 
   </world>
