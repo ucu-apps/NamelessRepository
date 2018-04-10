@@ -219,6 +219,7 @@
       <uri>model://robert_gazebo/models/table_rectangular_high</uri>
       <name>table_007_1</name>
       <pose>5.28 -5.8 0.55 0 0 0</pose>
+    </include>
 
     <include>
       <uri>model://robert_gazebo/models/table_rectangular_high</uri>
