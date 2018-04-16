@@ -23,6 +23,6 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 SocketServer.TCPServer.allow_reuse_address=True
 httpd = SocketServer.TCPServer(address, RequestHandler)
 
-rospy.loginfo("serving at port {}", PORT)
+rospy.loginfo("serving at port %s", PORT)
 httpd.serve_forever()
 httpd.shutdown()
