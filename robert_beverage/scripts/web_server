@@ -13,7 +13,7 @@ address = ("", PORT)
 
 class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_GET(self):
-        if self.path.startswith("/beverage"):
+        if self.path.startswith("/beverage?"):
             info = self.path.strip("/")[9:]
             coor = dict(x.split("=")for x in info.split("&"))
             rospy.loginfo("x=%s\ty=%s", coor['x'], coor['y'])
