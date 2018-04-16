@@ -1,6 +1,7 @@
 build/
 bin/
 lib/
+venv/
 msg_gen/
 srv_gen/
 node_modules/

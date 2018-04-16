@@ -3,13 +3,14 @@ import qrencode
 import argparse
 
 parser = argparse.ArgumentParser(description='generate qr-code')
-parser.add_argument('x-coor', metavar='h', type=str, nargs=1)
-parser.add_argument('y-coor', metavar='p', type=str, nargs=1)
+parser.add_argument('x', metavar='x', type=str, nargs=1)
+parser.add_argument('y', metavar='y', type=str, nargs=1)
 parser.add_argument('host', metavar='h', type=str, nargs=1)
-parser.add_argument('port', metavar='h', type=str, nargs=1)
-parser.add_argument('host', metavar='h', type=str, nargs=1)
-x, y, host, port, filename = parser.parse_args().data
-str_ = "http://{}:{}/beverage?x={}&y={}".format(host, port, x, y)
+parser.add_argument('port', metavar='p', type=str, nargs=1)
+parser.add_argument('filename', metavar='f', type=str, nargs=1)
+args = parser.parse_args()
+str_ = "http://{}:{}/beverage?x={}&y={}".format(args.host[0], args.port[0],\
+                                                 args.x[0], args.y[0])
 qr = qrencode.encode_scaled(str_, size=100)[2]
-qr.save(filename + ".png")
+qr.save(args.filename[0] + ".png")
 print 'Done.'
