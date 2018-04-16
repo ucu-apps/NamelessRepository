@@ -3,7 +3,6 @@ import rospy
 import socket
 import SocketServer
 import SimpleHTTPServer
-from std_msgs.msg import String
 
 rospy.init_node('web_server_node')
 rospy.loginfo('Inside web_server script')
@@ -24,6 +23,6 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 SocketServer.TCPServer.allow_reuse_address=True
 httpd = SocketServer.TCPServer(address, RequestHandler)
 
-print("serving at port", PORT)
+rospy.loginfo("serving at port {}", PORT)
 httpd.serve_forever()
 httpd.shutdown()
