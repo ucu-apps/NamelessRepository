@@ -4,7 +4,7 @@ import rospy
 import socket
 import SocketServer
 import SimpleHTTPServer
-from urlparse import urlparse
+from urlparse import urlparse, parse_qsl
 import rospkg
 
 rospy.init_node('web_server_node')
@@ -18,16 +18,23 @@ os.chdir('/')
 
 class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_GET(self):
-        try:
-            if self.path.startswith("/beverage?"):
-                query = urlparse(self.path).query
-                coor = dict(qc.split("=")for qc in query.split("&"))
-                rospy.loginfo("x=%s\ty=%s", coor['x'], coor['y'])
-        except:
-            pass
-        finally:
-            self.path = rospack.get_path('robert_beverage') + "/scripts/index.html"
-            rospy.loginfo(self.path)
+        if self.path.startswith("/beverage?"):
+            parsed = urlparse(self.path)
+            params = dict(parse_qsl(parsed.query))
+            if len(params) != 2:
+                rospy.logerr("Invalid arguments")
+            else:
+                try:
+                    params['x'] = int(params['x'])
+                    params['y'] = int(params['y'])
+                    rospy.loginfo("x=%d\ty=%d", params['x'], params['y'])
+                except ValueError:
+                    rospy.logerr("Invalid value")
+                except KeyError:
+                    rospy.logerr("Invalid arguments")
+        else:
+            rospy.logerr("Invalid url")
+        self.path = rospack.get_path('robert_beverage') + "/scripts/index.html"
         return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
 SocketServer.TCPServer.allow_reuse_address=True
