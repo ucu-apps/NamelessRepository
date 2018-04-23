@@ -9733,42 +9733,6 @@
     </include>
 
     <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_007_1</name>
-      <pose>5.26 -8.95 0.63 0 0 0</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_007_2</name>
-      <pose>3.96 -8.92 0.63 0 0 0</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_007_3</name>
-      <pose>3.14 -8.55 0.63 0 0 -0.8</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_007_4</name>
-      <pose>2.82 -7.73 0.63 0 0 -1.57</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_007_5</name>
-      <pose>2.86 -6.8 0.63 0 0 1.57</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_007_6</name>
-      <pose>2.82 -5.87 0.63 0 0 -1.57</pose>
-    </include>
-
-    <include>
       <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
       <name>soft_armchair_violet_1</name>
       <pose>14.88 1.67 0.38 0 0 1.57</pose>
@@ -9952,7 +9916,7 @@
     <include>
       <uri>model://robert_gazebo/models/bookcase</uri>
       <name>bookcase_007</name>
-      <pose>2.41 -4.8 0 0 0 1.57</pose>
+      <pose>2.41 -4.8 0 0 0 -1.57</pose>
     </include>
 
   </world>
