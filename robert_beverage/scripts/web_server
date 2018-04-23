@@ -14,7 +14,15 @@ rospack = rospkg.RosPack()
 HOST = socket.gethostname()
 PORT = 8080
 address = ("", PORT)
-os.chdir('/')
+os.chdir(rospack.get_path('robert_beverage'))
+
+
+def isfloat(value):
+    try:
+        float(value)
+        return True
+    except ValueError:
+        return False
 
 class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_GET(self):
@@ -25,16 +33,23 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                 rospy.logerr("Invalid arguments")
             else:
                 try:
-                    params['x'] = int(params['x'])
-                    params['y'] = int(params['y'])
-                    rospy.loginfo("x=%d\ty=%d", params['x'], params['y'])
+                    params['x'] = float(params['x'])
+                    params['y'] = float(params['y'])
                 except ValueError:
-                    rospy.logerr("Invalid value")
+                    if not isfloat(params['x']):
+                        rospy.logerr("x value not valid")
+                    else:
+                        rospy.logerr("y value not valid")
                 except KeyError:
-                    rospy.logerr("Invalid arguments")
+                    if 'x' not in params:
+                        rospy.logerr("x value doesn't exist")
+                    else:
+                        rospy.logerr("y value doesn't exist")
+                else:
+                    rospy.loginfo("x=%f\ty=%f", params['x'], params['y'])
         else:
             rospy.logerr("Invalid url")
-        self.path = rospack.get_path('robert_beverage') + "/scripts/index.html"
+        self.path = "/scripts/index.html"
         return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
 SocketServer.TCPServer.allow_reuse_address=True
