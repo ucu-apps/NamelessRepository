@@ -14,8 +14,12 @@ parser.add_argument('host', metavar='h', type=str, nargs=1)
 parser.add_argument('port', metavar='p', type=int, nargs=1)
 parser.add_argument('filename', metavar='f', type=str, nargs=1)
 args = parser.parse_args()
-str_ = "http://{}:{}/beverage?x={}&y={}".format(args.host[0], args.port[0],\
-                                                 args.x[0], args.y[0])
+
+if os.path.isfile(args.filename[0] + '.png'):
+    raise Exception("File with exact name already exist")
+
+str_ = "http://{}:{}/beverage?x={}&y={}".format(args.host[0], args.port[0],
+                                                args.x[0], args.y[0])
 qr = qrencode.encode_scaled(str_, size=100)[2]
 qr.save(args.filename[0] + ".png")
 print 'Done.'
