@@ -11,4 +11,5 @@
   <buildtool_depend>catkin</buildtool_depend>
   <run_depend>rospy</run_depend>
   <run_depend>python-qrencode</run_depend>
+  <run_depend>pythonpkg</run_depend>
 </package>
