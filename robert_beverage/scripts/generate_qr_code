@@ -4,8 +4,8 @@ import qrencode
 import argparse
 import rospkg
 
-rospack = rospkg.PosPack()
-os.chdir(rospack.getPath('robert_beverage'))
+rospack = rospkg.RosPack()
+os.chdir(rospack.get_path('robert_beverage') + '/images')
 
 parser = argparse.ArgumentParser(description='generate qr-code')
 parser.add_argument('x', metavar='x', type=float, nargs=1)
