@@ -14,7 +14,9 @@ rospack = rospkg.RosPack()
 HOST = socket.gethostname()
 PORT = 8080
 address = ("", PORT)
-os.chdir(rospack.get_path('robert_beverage'))
+os.chdir(rospack.get_path('robert_beverage') + '/web_server')
+SUCCESS_PATH = "/success.html"
+FAIL_PATH = "/fail.html"
 
 
 def isfloat(value):
@@ -32,7 +34,7 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
             params = dict(parse_qsl(parsed.query))
             if len(params) != 2:
                 rospy.logerr("Invalid arguments")
-                self.path = "/web_server/fail.html"
+                self.path = FAIL_PATH
             else:
                 try:
                     params['x'] = float(params['x'])
@@ -42,20 +44,23 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                         rospy.logerr("x value not valid")
                     else:
                         rospy.logerr("y value not valid")
-                    self.path = "/web_server/fail.html"
+                    self.path = FAIL_PATH
                 except KeyError:
                     if 'x' not in params:
                         rospy.logerr("x value doesn't exist")
                     else:
                         rospy.logerr("y value doesn't exist")
-                    self.path = "/web_server/fail.html"
+                    self.path = FAIL_PATH
                 else:
                     rospy.loginfo("x=%f\ty=%f", params['x'], params['y'])
-                    self.path = "/web_server/success.html"
+                    self.path = SUCCESS_PATH
+        elif self.path.startswith("/styles") or self.path.startswith("/images"):
+            pass
         else:
             rospy.logerr("Invalid url")
-            self.path = "/web_server/fail.html"
+            self.path = FAIL_PATH
         return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
+
 
 SocketServer.TCPServer.allow_reuse_address = True
 httpd = SocketServer.TCPServer(address, RequestHandler)
