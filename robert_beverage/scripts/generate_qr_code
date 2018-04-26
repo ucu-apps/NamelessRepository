@@ -4,6 +4,17 @@ import qrencode
 import argparse
 import rospkg
 
+def host_correct(host):
+    try:
+        digits = host.split(".")
+        assert len(digits) == 4
+        for digit in digits:
+            digit = int(digit)
+            assert 0 <= digit < 256
+        return True
+    except (ValueError, AssertionError):
+        return False
+
 rospack = rospkg.RosPack()
 os.chdir(rospack.get_path('robert_beverage') + '/images')
 
@@ -14,6 +25,9 @@ parser.add_argument('host', metavar='h', type=str, nargs=1)
 parser.add_argument('port', metavar='p', type=int, nargs=1)
 parser.add_argument('filename', metavar='f', type=str, nargs=1)
 args = parser.parse_args()
+
+if not host_correct(args.host[0]):
+    raise Exception("host is not correct")
 
 if os.path.isfile(args.filename[0] + '.png'):
     raise Exception("File with exact name already exist")
