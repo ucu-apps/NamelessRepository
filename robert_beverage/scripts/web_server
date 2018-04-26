@@ -24,6 +24,7 @@ def isfloat(value):
     except ValueError:
         return False
 
+
 class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path.startswith("/beverage?"):
@@ -56,7 +57,7 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
             self.path = "/web_server/fail.html"
         return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
-SocketServer.TCPServer.allow_reuse_address=True
+SocketServer.TCPServer.allow_reuse_address = True
 httpd = SocketServer.TCPServer(address, RequestHandler)
 
 rospy.loginfo("serving at port %s", PORT)
