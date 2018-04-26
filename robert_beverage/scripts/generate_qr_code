@@ -4,6 +4,7 @@ import qrencode
 import argparse
 import rospkg
 
+
 def host_correct(host):
     try:
         digits = host.split(".")
