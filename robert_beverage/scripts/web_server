@@ -31,6 +31,7 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
             params = dict(parse_qsl(parsed.query))
             if len(params) != 2:
                 rospy.logerr("Invalid arguments")
+                self.path = "/web_server/fail.html"
             else:
                 try:
                     params['x'] = float(params['x'])
@@ -40,16 +41,19 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                         rospy.logerr("x value not valid")
                     else:
                         rospy.logerr("y value not valid")
+                    self.path = "/web_server/fail.html"
                 except KeyError:
                     if 'x' not in params:
                         rospy.logerr("x value doesn't exist")
                     else:
                         rospy.logerr("y value doesn't exist")
+                    self.path = "/web_server/fail.html"
                 else:
                     rospy.loginfo("x=%f\ty=%f", params['x'], params['y'])
+                    self.path = "/web_server/success.html"
         else:
             rospy.logerr("Invalid url")
-        self.path = "/scripts/index.html"
+            self.path = "/web_server/fail.html"
         return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
 SocketServer.TCPServer.allow_reuse_address=True
