@@ -9570,7 +9570,6 @@
       </link>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
-
     </model>
 
     <include>
@@ -10460,10 +10459,20 @@
     <include>
       <uri>model://robert_gazebo/models/board_stand</uri>
       <name>board_lectorium</name>
-      <pose>-1 10 0 0 0 0</pose>
+      <pose>0 9 0 0 0 0</pose>
     </include>
 
+    <include>
+      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
+      <name>lect_chair_light_grey</name>
+      <pose>2 11 0 0 0 0</pose>
+    </include>
 
+    <include>
+      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
+      <name>lect_chair_orange</name>
+      <pose>3 11 0 0 0 0</pose>
+    </include>
 
 
   </world>
