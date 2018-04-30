@@ -32,8 +32,8 @@ if not host_correct(args.host[0]):
 if os.path.isfile(args.filename[0]):
     raise Exception("File with exact name already exist")
 
-str_ = "http://{}:{}/beverage?x={}&y={}".format(args.host[0], args.port[0],
+link = "http://{}:{}/beverage?x={}&y={}".format(args.host[0], args.port[0],
                                                 args.x[0], args.y[0])
-qr = qrencode.encode_scaled(str_, size=100)[2]
+qr = qrencode.encode_scaled(link, size=100)[2]
 qr.save(args.filename[0])
 print 'Done.'
