@@ -2,7 +2,6 @@
 import os
 import qrencode
 import argparse
-import rospkg
 
 
 def host_correct(host):
@@ -18,8 +17,6 @@ def host_correct(host):
     except (ValueError, AssertionError):
         return False
 
-rospack = rospkg.RosPack()
-os.chdir(rospack.get_path('robert_beverage') + '/images')
 
 parser = argparse.ArgumentParser(description='generate qr-code')
 parser.add_argument('--x', metavar='x', type=float, nargs=1)
