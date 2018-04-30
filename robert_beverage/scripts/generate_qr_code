@@ -26,7 +26,7 @@ parser.add_argument('x', metavar='x', type=float, nargs=1)
 parser.add_argument('y', metavar='y', type=float, nargs=1)
 parser.add_argument('host', metavar='h', type=str, default="localhost", nargs=1)
 parser.add_argument('port', metavar='p', type=int, default=8080, nargs=1)
-parser.add_argument('filename', metavar='f', type=str, default="qr_code.png" nargs=1)
+parser.add_argument('filename', metavar='f', type=str, default="qr_code.png", nargs=1)
 args = parser.parse_args()
 
 if not host_correct(args.host[0]):
