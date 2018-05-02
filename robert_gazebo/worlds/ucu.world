@@ -13,6 +13,7 @@
       </attenuation>
       <direction>-0.5 0.1 -0.9</direction>
     </light>
+
     <model name='ground_plane'>
       <static>1</static>
       <link name='link'>
@@ -1362,6 +1363,18 @@
       </model>
       <light name='sun'>
         <pose frame=''>0 0 10 0 -0 0</pose>
+      </light>
+      <light name='user_directional_light_0'>
+        <pose frame=''>5.269 -2.18246 1 -1.57 -0 0</pose>
+      </light>
+      <light name='user_directional_light_1'>
+        <pose frame=''>6.28339 -1.54451 1 0 1.57 0</pose>
+      </light>
+      <light name='user_directional_light_2'>
+        <pose frame=''>5.68018 -0.243189 1 0 -1.57 0</pose>
+      </light>
+      <light name='user_directional_light_3'>
+        <pose frame=''>4.48606 -1.53734 1 1.57 -0 0</pose>
       </light>
     </state>
     <gui fullscreen='0'>
@@ -9570,6 +9583,59 @@
       </link>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
+
+        <light name='user_directional_light_0' type='directional'>
+      <pose frame=''>5.269 -2.18246 1 -1.57 -0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>1</cast_shadows>
+    </light>
+    <light name='user_directional_light_1' type='directional'>
+      <pose frame=''>6.28339 -1.54451 1 0 1.57 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>1</cast_shadows>
+    </light>
+    <light name='user_directional_light_2' type='directional'>
+      <pose frame=''>5.68018 -0.243189 1 0 -1.57 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>1</cast_shadows>
+    </light>
+    <light name='user_directional_light_3' type='directional'>
+      <pose frame=''>4.48606 -1.53734 1 1.57 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>1</cast_shadows>
+    </light>
 
     <include>
       <uri>model://robert_gazebo/models/APPS_letters</uri>
