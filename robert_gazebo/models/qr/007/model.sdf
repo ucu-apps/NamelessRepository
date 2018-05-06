@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="qr_007">
+
+      <pose>0 0 1.2 0 0 0</pose>
+
+      <static>true</static>
+
+      <link name="link">
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>0.15 0.01 0.15</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+          <box>
+            <size>0.15 0.01 0.15</size>
+          </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://leobot_gazebo/models/qr/007/materials/scripts</uri>
+            <uri>model://leobot_gazebo/models/qr/007/materials/textures</uri>
+            <name>qr_007</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
