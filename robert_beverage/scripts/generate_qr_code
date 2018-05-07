@@ -16,7 +16,6 @@ def get_coordinates():
             trans = tfBuffer.lookup_transform('map', 'base_link', rospy.Time())
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException,
                 tf2_ros.ExtrapolationException):
-            raise
             rate.sleep()
             continue
         else:
@@ -37,10 +36,8 @@ def host_correct(host):
     except (ValueError, AssertionError):
         return False
 
-get_coordinates()
+coors = get_coordinates()
 parser = argparse.ArgumentParser(description='generate qr-code')
-parser.add_argument('--x', metavar='x', type=float, nargs=1)
-parser.add_argument('--y', metavar='y', type=float, nargs=1)
 parser.add_argument('--host', metavar='h', type=str, default=["localhost"], nargs=1)
 parser.add_argument('--port', metavar='p', type=int, default=[8080], nargs=1)
 parser.add_argument('--filename', metavar='f', type=str, default=["qr_code.png"], nargs=1)
@@ -53,7 +50,8 @@ if os.path.isfile(args.filename[0]):
     rospy.logerr("File with exact name already exist")
 
 link = "http://{}:{}/beverage?x={}&y={}".format(args.host[0], args.port[0],
-                                                args.x[0], args.y[0])
+                                                coors['x'], coors['y'])
 qr = qrencode.encode_scaled(link, size=100)[2]
 qr.save(args.filename[0])
+rospy.logdebug(link)
 rospy.loginfo('Done.')
