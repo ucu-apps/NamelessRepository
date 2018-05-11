@@ -9167,8 +9167,6 @@
       <pose frame=''>-1.2423 -1.3637 0 0 -0 0</pose>
     </model>
 
-
-
     <model name='colums_lectorium'>
       <pose frame=''> 0 0 0 0 0 0</pose>
       <static>1</static>
@@ -9573,30 +9571,12 @@
       <allow_auto_disable>1</allow_auto_disable>
     </model>
 
-
-    <include>
-      <uri>model://robert_gazebo/models/APPS_letters</uri>
-      <name>APPS</name>
-      <pose>11.01 -4.67 1.49 0 0 1.57</pose>
-    </include>
-
     <include>
       <uri>model://robert_gazebo/models/locker_008</uri>
       <name>locker_008</name>
       <pose>1.87 -5.11 0.45 0 0 -1.57</pose>
     </include>
 
-    <include>
-      <uri>model://robert_gazebo/models/locker_008</uri>
-      <name>locker_014</name>
-      <pose>-4.09 5.8 0.45 0 0 -1.65</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/locker_008</uri>
-      <name>locker_015</name>
-      <pose>2.39 4.99 0.45 0 0 1.45</pose>
-    </include>
 
     <include>
       <uri>model://robert_gazebo/models/locker_008</uri>
@@ -9620,90 +9600,6 @@
       <uri>model://robert_gazebo/models/locker_008</uri>
       <name>locker_009_4</name>
       <pose>-8.08 -9.985 0.45 0 0 -3.14</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/pictures/p1_myroslav_popovych</uri>
-      <name>p1_myroslav_popovych</name>
-      <pose>7.69 -4.35 1.72 -1.57 0 -0.02</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/pictures/p2_oprah_winfrey</uri>
-      <name>p2_oprah_winfrey</name>
-        <pose>6.89 -4.35 1.72 -1.57 0 0</pose>
-    </include>
-
-    <include>
-        <uri>model://robert_gazebo/models/pictures/p3_lubomyr_romankiw</uri>
-        <name>p3_lubomyr_romankiw</name>
-        <pose>6.09 -4.35 1.72 -1.57 0 -0.02</pose>
-    </include>
-
-    <include>
-        <uri>model://robert_gazebo/models/pictures/p4_viktor_morozov</uri>
-        <name>p4_viktor_morozov</name>
-        <pose>5.29 -4.35 1.72 -1.57 0 -0.02</pose>
-    </include>
-
-    <include>
-        <uri>model://robert_gazebo/models/pictures/p5_mahatma_gandhi</uri>
-        <name>p5_mahatma_gandhi</name>
-        <pose>2.65 -4.35 1.72 -1.57 0 -0.02</pose>
-    </include>
-
-    <include>
-        <uri>model://robert_gazebo/models/pictures/p6_lina_kostenko</uri>
-        <name>p6_lina_kostenko</name>
-        <pose>1.75 -4.35 1.72 -1.57 0 -0.02</pose>
-    </include>
-
-    <include>
-        <uri>model://robert_gazebo/models/pictures/p7_henry_ford</uri>
-        <name>p7_henry_ford</name>
-        <pose>0.85 -4.35 1.72 -1.57 0 -0.02</pose>
-    </include>
-
-    <include>
-        <uri>model://robert_gazebo/models/pictures/p8_gregory_skovoroda</uri>
-        <name>p8_gregory_skovoroda</name>
-        <pose>-0.04 -4.35 1.72 -1.57 0 -0.02</pose>
-    </include>
-
-    <include>
-        <uri>model://robert_gazebo/models/pictures/p9_adrian_slywotzky</uri>
-        <name>p9_adrian_slywotzky</name>
-        <pose>-2.55 -4.35 1.72 -1.57 0 -0.02</pose>
-    </include>
-
-    <include>
-        <uri>model://robert_gazebo/models/pictures/p10_bohdan_hawrylyshyn</uri>
-        <name>p10_bohdan_hawrylyshyn</name>
-        <pose>-3.36 -4.35 1.72 -1.57 0 -0.02</pose>
-    </include>
-
-    <include>
-        <uri>model://robert_gazebo/models/pictures/p11_sheryl_sandberg</uri>
-        <name>p11_sheryl_sandberg</name>
-        <pose>-4.18 -4.35 1.72 -1.57 0 -0.02</pose>
-    </include>
-
-    <include>
-        <uri>model://robert_gazebo/models/pictures/p12_donald_knuth</uri>
-        <name>p12_donald_knuth</name>
-        <pose>-4.99 -4.35 1.72 -1.57 0 -0.02</pose>
-    </include>
-
-    <include>
-        <uri>model://robert_gazebo/models/pictures/p13_borys_gudziak</uri>
-        <name>p13_borys_gudziak</name>
-        <pose>-5.8 -4.35 1.72 -1.57 0 -0.02</pose>
-    </include>
-
-    <include>
-        <uri>model://robert_gazebo/models/pictures/p14_oscar_wilde</uri>
-        <name>p14_oscar_wilde</name>
-        <pose>-6.62 -4.35 1.72 -1.57 0 -0.02</pose>
     </include>
 
     <include>
@@ -9740,12 +9636,6 @@
       <uri>model://robert_gazebo/models/puffy/orange</uri>
       <name>puffy_orange_2</name>
       <pose>-4.29 -4.07 0.2 0 0 0</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/screen</uri>
-      <name>screen_007</name>
-      <pose>5.31 -4.95 1.6 0 0 2.79</pose>
     </include>
 
     <include>
@@ -9803,46 +9693,7 @@
       <pose>-2.5 -6.94 0.445 0 0 3.14</pose>
     </include>
 
-    <include>
-      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
-      <name>table_008_2_1</name>
-      <pose>0.58 -7.62 0.55 0 0 -1.57</pose>
-    </include>
-
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_2_1_1</name>
-      <pose>0.81 -8.29 0.445 0 0 3.14</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_2_1_2</name>
-      <pose>0.35 -8.29 0.445 0 0 3.14</pose>
-    </include>
-
-
-    <include>
-      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
-      <name>table_008_2_2</name>
-      <pose>-0.84 -7.62 0.55 0 0 -1.57</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_2_2_1</name>
-      <pose>-0.61 -8.29 0.445 0 0 3.14</pose>
-    </include>
-
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_2_2_2</name>
-      <pose>-1.07 -8.29 0.445 0 0 3.14</pose>
-    </include>
-
-    <include>
+        <include>
       <uri>model://robert_gazebo/models/table_rectangular_high</uri>
       <name>table_008_2_3</name>
       <pose>-2.26 -7.62 0.55 0 0 -1.57</pose>
@@ -9894,99 +9745,6 @@
       <uri>model://robert_gazebo/models/classroom_chair_green</uri>
       <name>classroom_chair_008_2_5_2</name>
       <pose>-5.33 -8.29 0.445 0 0 3.14</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
-      <name>table_008_3_1</name>
-      <pose>0.58 -8.97 0.55 0 0 -1.57</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_3_1_1</name>
-      <pose>0.81 -9.64 0.445 0 0 3.14</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_3_1_2</name>
-      <pose>0.35 -9.64 0.445 0 0 3.14</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
-      <name>table_008_3_2</name>
-      <pose>-0.84 -8.97 0.55 0 0 -1.57</pose>
-    </include>
-
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_green</uri>
-      <name>classroom_chair_008_3_2_1</name>
-      <pose>-0.61 -9.64 0.445 0 0 3.14</pose>
-    </include>
-
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_3_2_2</name>
-      <pose>-1.07 -9.64 0.445 0 0 3.14</pose>
-    </include>
-
-
-    <include>
-      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
-      <name>table_008_3_3</name>
-      <pose>-2.26 -8.97 0.55 0 0 -1.57</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_3_3_1</name>
-      <pose>-2.03 -9.64 0.445 0 0 3.14</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_3_3_2</name>
-      <pose>-2.5 -9.64 0.445 0 0 3.14</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
-      <name>table_008_3_4</name>
-      <pose>-3.68 -8.97 0.55 0 0 -1.57</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_2_4_1</name>
-      <pose>-3.45 -9.64 0.445 0 0 3.14</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_2_4_2</name>
-      <pose>-3.91 -9.64 0.445 0 0 3.14</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
-      <name>table_008_3_5</name>
-      <pose>-5.1 -8.97 0.55 0 0 -1.57</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_2_5_1</name>
-      <pose>-4.87 -9.64 0.445 0 0 3.14</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_008_2_5_2</name>
-      <pose>-5.33 -9.64 0.445 0 0 3.14</pose>
     </include>
 
     <include>
@@ -10093,72 +9851,6 @@
 
     <include>
       <uri>model://robert_gazebo/models/table_rectangular_high</uri>
-      <name>table_015_1</name>
-      <pose>4.67 4.71 0.55 0 0 -1.63</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_green</uri>
-      <name>classroom_chair_015_1_1</name>
-      <pose>3.75 4.74 0.445 0 0 1.54</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_green</uri>
-      <name>classroom_chair_015_1_2</name>
-      <pose>4.42 5.32 0.445 0 0 -0.07</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_015_1_3</name>
-      <pose>5 5.28 0.445 0 0 -0.07</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_015_1_4</name>
-      <pose>4.9049 4.08896 0.445362 -5e-06 -0.000123 3.09516</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
-      <name>table_015_2</name>
-      <pose>7.13 4.55 0.55 0 0 -1.63</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_015_2_1</name>
-      <pose>6.86 5.15 0.445 0 0 -0.07</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_015_2_2</name>
-      <pose>7.54 5.1 0.445 0 0 -0.07</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_green</uri>
-      <name>classroom_chair_015_2_3</name>
-      <pose>8.08 4.5 0.445 0 0 -1.65</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
-      <name>table_014_1</name>
-      <pose>-5.09 5.9 0.55 0 0 -0.1</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
-      <name>table_014_2</name>
-      <pose>-7.37 6.22 0.55 0 0 -0.06</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_rectangular_high</uri>
       <name>table_009_1</name>
       <pose>-8.59 -6.4 0.55 0 0 0</pose>
     </include>
@@ -10240,6 +9932,7 @@
       <name>soft_armchair_violet_1</name>
       <pose>14.88 1.67 0.38 0 0 1.57</pose>
     </include>
+
 
     <include>
       <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
@@ -10435,36 +10128,6 @@
     </include>
 
     <include>
-      <uri>model://robert_gazebo/models/board_wall</uri>
-      <name>board_007</name>
-      <pose>6.1 -7.44 1.46 0 0 3.14</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/board_008</uri>
-      <name>board_008_1</name>
-      <pose>-3.31979 -4.53449 1.46 0 0 -1.57</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/board_008</uri>
-      <name>board_008_2</name>
-      <pose>0.178197 -4.53903 1.46 0 0 -1.57</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_014_1</name>
-      <pose>-5.66 6.28 0.445361 0 0 1.45256</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/classroom_chair_grey</uri>
-      <name>classroom_chair_014_2</name>
-      <pose>-5.73 5.73 0.445361 0 0 1.47</pose>
-    </include>
-
-    <include>
       <uri>model://robert_gazebo/models/board_stand</uri>
       <name>board_lectorium</name>
       <pose>-4.30445 12.6412 1.2483 0.000425 -0.002923 -1.65138</pose>
@@ -10477,573 +10140,9 @@
     </include>
 
     <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_2</name>
-      <pose>1.33086 17.2585 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_3</name>
-      <pose>1.80817 17.2412 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_4</name>
-      <pose>2.32523 17.2847 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_5</name>
-      <pose>2.7994 17.294 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_6</name>
-      <pose>7.16626 17.2876 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_7</name>
-      <pose>7.63478 17.2919 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_8</name>
-      <pose>8.11598 17.2866 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_9</name>
-      <pose>8.60282 17.281 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_10</name>
-      <pose>9.10577 17.2709 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_11</name>
-      <pose>9.58142 17.2658 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_12</name>
-      <pose>10.2523 16.5143 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_13</name>
-      <pose>10.1946 16.0278 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_14</name>
-      <pose>10.1634 15.546 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_15</name>
-      <pose>10.1127 15.0753 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_16</name>
-      <pose>9.66744 10.7472 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_17</name>
-      <pose>9.61735 10.2868 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_18</name>
-      <pose>9.5731 9.83249 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_19</name>
-      <pose>9.53999 9.387 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_20</name>
-      <pose>9.4733 8.91319 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_21</name>
-      <pose>7.53181 6.13669 0.374526 0.001224 0.00015 1.45363</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_22</name>
-      <pose>7.02819 6.17411 0.374531 0.001224 0.00015 1.45363</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_23</name>
-      <pose>6.55256 6.21187 0.374533 0.001224 0.00015 1.45363</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_24</name>
-      <pose>6.02407 6.30504 0.374523 0.001224 0.00015 1.45363</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_25</name>
-      <pose>5.48766 6.3306 0.374523 0.001224 0.00015 1.45363</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_26</name>
-      <pose>4.97659 6.38275 0.374523 0.001224 0.00015 1.45363</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_27</name>
-      <pose>4.47139 6.41777 0.374523 0.001224 0.00015 1.45363</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_28</name>
-      <pose>3.93585 6.47426 0.374523 0.001224 0.00015 1.45363</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_29</name>
-      <pose>3.45371 6.51971 0.374523 0.001224 0.00015 1.45363</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_30</name>
-      <pose>2.99984 6.54281 0.374523 0.001224 0.00015 1.45363</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_31</name>
-      <pose>2.53627 6.58704 0.374523 0.001224 0.00015 1.45363</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_32</name>
-      <pose>2.06178 6.61075 0.374523 0.001224 0.00015 1.45363</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_33</name>
-      <pose>10.0704 14.5811 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_34</name>
-      <pose>10.0136 14.0883 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_35</name>
-      <pose>9.97593 13.6079 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_36</name>
-      <pose>9.91838 13.1268 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_37</name>
-      <pose>9.86017 12.6402 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_38</name>
-      <pose>9.81855 12.1515 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_39</name>
-      <pose>9.78064 11.6931 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_40</name>
-      <pose>9.71908 11.2208 0.374502 0.000101 -0.001229 3.0642</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_41</name>
-      <pose>3.28672 17.2997 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_42</name>
-      <pose>3.76849 17.2902 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_43</name>
-      <pose>4.23907 17.2966 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_44</name>
-      <pose>4.74759 17.3028 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_45</name>
-      <pose>5.24365 17.2882 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_46</name>
-      <pose>5.72488 17.2828 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_47</name>
-      <pose>6.23121 17.2858 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/dark_grey</uri>
-      <name>lect_chair_black_48</name>
-      <pose>6.70686 17.2808 0.37458 -0.001233 -2.3e-05 -1.5847</pose>
-    </include>
-
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_1</name>
-      <pose>0.386157 11.5961 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_2</name>
-      <pose>0.427872 12.279 0.3765 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_3</name>
-      <pose>0.508799 13.474 0.376532 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_4</name>
-      <pose>1.81791 14.6708 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_5</name>
-      <pose>1.78685 14.0532 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_6</name>
-      <pose>1.74502 13.4646 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_7</name>
-      <pose>1.64795 10.8152 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_8</name>
-      <pose>2.84676 9.94972 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_9</name>
-      <pose>2.86526 10.4415 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_10</name>
-      <pose>2.88821 10.9657 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_11</name>
-      <pose>2.91734 11.5069 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_12</name>
-      <pose>4.17651 10.7596 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_13</name>
-      <pose>4.08391 10.2009 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_14</name>
-      <pose>4.21815 11.8376 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_15</name>
-      <pose>4.24919 12.4352 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_16</name>
-      <pose>4.33547 13.5622 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_17</name>
-      <pose>5.34688 10.3946 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_18</name>
-      <pose>5.38579 11.0403 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_19</name>
-      <pose>5.53608 12.9574 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_20</name>
-      <pose>5.57568 13.5249 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_21</name>
-      <pose>5.61158 14.1788 0.376564 0.000116 -0.001222 3.0853</pose>
-    </include>    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_22</name>
-      <pose>6.59102 10.2862 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_23</name>
-      <pose>6.57521 9.65488 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_24</name>
-      <pose>6.69451 11.6277 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_25</name>
-      <pose>6.77011 13.5258 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_26</name>
-      <pose>6.87018 14.7574 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_27</name>
-      <pose>4.38972 14.788 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_28</name>
-      <pose>2.97839 12.6375 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_29</name>
-      <pose>3.02329 13.1081 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_30</name>
-      <pose>3.08203 14.2472 0.376517 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_31</name>
-      <pose>0.646482 15.069 0.376532 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_32</name>
-      <pose>0.679102 15.5782 0.376532 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_33</name>
-      <pose>3.11815 14.8038 0.376532 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_34</name>
-      <pose>0.486304 12.9068 0.37654 0.000116 -0.001222 3.0853</pose>
-    </include>
-    <include>
       <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
       <name>lect_chair_grey_35</name>
       <pose>-3.77696 14.925 0.37654 -0.000156 0.001218 -0.088784</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/light_grey</uri>
-      <name>lect_chair_grey_36</name>
-      <pose>0.56128 14.0193 0.374578 -1e-06 0.001229 3.08526</pose>
-    </include>
-
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_1</name>
-      <pose>0.363014 10.911 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_2</name>
-      <pose>0.321754 10.2692 0.377832 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_3</name>
-      <pose>0.58956 14.5715 0.377847 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_4</name>
-      <pose>1.58355 10.2041 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_5</name>
-      <pose>2.97595 12.0598 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_6</name>
-      <pose>3.06342 13.683 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_7</name>
-      <pose>3.18063 15.3787 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_8</name>
-      <pose>4.1962 11.3084 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_9</name>
-      <pose>4.32701 12.9769 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_10</name>
-      <pose>5.44034 11.758 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_11</name>
-      <pose>5.30287 9.79544 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_12</name>
-      <pose>5.47476 12.3015 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_13</name>
-      <pose>5.64229 14.7762 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_14</name>
-      <pose>6.80481 14.1275 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_15</name>
-      <pose>6.75967 12.8942 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_16</name>
-      <pose>6.7199 12.2561 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_17</name>
-      <pose>6.61968 10.9544 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_18</name>
-      <pose>4.38028 14.1793 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_19</name>
-      <pose>1.65327 11.5083 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_20</name>
-      <pose>1.69932 12.1276 0.37783 0.000123 -0.00123 3.07086</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/lectorium_chair/orange</uri>
-      <name>lect_chair_orange_21</name>
-      <pose>1.72721 12.8434 0.37783 0.000123 -0.00123 3.07086</pose>
     </include>
 
     <include>
@@ -11052,187 +10151,219 @@
       <pose>-3.12463 15.06 0.386076 1e-05 0 -0.101424</pose>
     </include>
 
-
     <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_1</name>
-      <pose>-0.060439 13.3741 0.654751 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_2</name>
-      <pose>-0.055916 14.3812 0.654705 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_3</name>
-      <pose>-0.162115 12.3839 0.654705 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_4</name>
-      <pose>-0.29217 10.3703 0.654705 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_5</name>
-      <pose>1.10014 13.2969 0.6547 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_6</name>
-      <pose>0.974692 11.3127 0.654702 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_7</name>
-      <pose>2.18925 10.1611 0.654702 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_8</name>
-      <pose>2.30241 12.1494 0.654702 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_9</name>
-      <pose>2.42857 14.1276 0.654705 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_10</name>
-      <pose>3.48479 11.0652 0.654702 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_11</name>
-      <pose>3.62365 13.0475 0.654704 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_12</name>
-      <pose>3.72334 15.0263 0.654693 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_13</name>
-      <pose>4.64916 9.977 0.654702 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_14</name>
-      <pose>4.77791 11.9778 0.654706 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_15</name>
-      <pose>4.93654 13.9711 0.654704 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_16</name>
-      <pose>6.07468 12.9052 0.654706 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_17</name>
-      <pose>5.94523 10.9241 0.654704 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_18</name>
-      <pose>6.1924 14.8948 0.654704 -0.000164 4.4e-05 -1.62999</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_19</name>
-      <pose>-0.180557 11.3685 0.654751 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_20</name>
-      <pose>2.28829 11.1443 0.654667 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_21</name>
-      <pose>2.41439 13.1267 0.65467 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_22</name>
-      <pose>3.45906 10.0542 0.654667 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_23</name>
-      <pose>4.7601 10.9664 0.654667 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_24</name>
-      <pose>4.89946 12.9524 0.654667 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_25</name>
-      <pose>5.04971 14.9459 0.654667 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_26</name>
-      <pose>5.93911 9.9079 0.654661 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_27</name>
-      <pose>6.05852 11.912 0.654667 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_28</name>
-      <pose>6.17348 13.8842 0.654667 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_29</name>
-      <pose>3.60272 12.0449 0.654667 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_30</name>
-      <pose>3.72816 14.029 0.654671 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_31</name>
-      <pose>1.20973 14.2706 0.654751 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_32</name>
-      <pose>0.967568 10.3158 0.654752 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_33</name>
-      <pose>1.09159 12.2997 0.654749 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_34</name>
-      <pose>2.53035 15.1062 0.654751 0.000164 -4.5e-05 1.51224</pose>
-    </include>
-
-    <include>
-      <uri>model://robert_gazebo/models/table_trapezoid</uri>
-      <name>table_lect_35</name>
-      <pose>0.05766 15.3751 0.654751 0.000164 -4.5e-05 1.51224</pose>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_1</name>
+      <pose>-6.56603 -3.87729 0.379515 1e-06 -0 0</pose>
     </include>
 
 
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_2</name>
+      <pose>-6.622 -2.97361 0.379515 1e-06 -0 0</pose>
+    </include>
 
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_3</name>
+      <pose>-7.5191 -2.94807 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_4</name>
+      <pose>-7.45958 0.284014 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_5</name>
+      <pose>-8.36548 0.325113 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_6</name>
+      <pose>-8.33122 1.39626 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_7</name>
+      <pose>-8.34254 2.39043 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_8</name>
+      <pose>-8.38205 -2.9349 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_9</name>
+      <pose>-5.38671 4.14625 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_10</name>
+      <pose>-5.44753 3.17913 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_11</name>
+      <pose>-5.49418 2.22183 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_12</name>
+      <pose>-6.63288 -1.84973 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_13</name>
+      <pose>-6.64784 -0.710534 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_14</name>
+      <pose>-6.59561 0.233997 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/green</uri>
+      <name>test_green_15</name>
+      <pose>-6.30358 2.29232 0.379515 1e-06 -0 0</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_1</name>
+      <pose>6.87213 6.56217 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_2</name>
+      <pose>6.94535 7.3687 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_3</name>
+      <pose>9.10908 10.3366 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_4</name>
+      <pose>2.54778 11.4408 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_5</name>
+      <pose>1.51965 11.5662 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_6</name>
+      <pose>0.41743 11.5769 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_7</name>
+      <pose>0.921623 7.10102 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_8</name>
+      <pose>1.63931 7.78531 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_9</name>
+      <pose>2.3137 8.50098 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_10</name>
+      <pose>-0.344634 8.73077 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_11</name>
+      <pose>-1.80387 7.42731 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_12</name>
+      <pose>-1.26041 8.16735 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_13</name>
+      <pose>2.42503 9.56466 0.379515 0 0 -1.64999</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/orange</uri>
+      <name>test_orange_14</name>
+      <pose>2.51052 10.5013 0.379515 0 0 -1.64999</pose>
+    </include>
+
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
+      <name>test_violet_1</name>
+      <pose>0.254246 -3.0748 0.379515 1e-06 0 -0.000695</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
+      <name>test_violet_2</name>
+      <pose>-1.15159 -1.83475 0.379515 1e-06 0 -0.000695</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
+      <name>test_violet_3</name>
+      <pose>-2.96369 -0.335921 0.379515 1e-06 0 -0.000695</pose>
+    </include>
+
+    <include>
+      <uri>model://robert_gazebo/models/soft_armchair/violet</uri>
+      <name>test_violet_4</name>
+      <pose>-1.61991 1.61827 0.379515 1e-06 0 -0.000695</pose>
+    </include>
+    
   </world>
 </sdf>

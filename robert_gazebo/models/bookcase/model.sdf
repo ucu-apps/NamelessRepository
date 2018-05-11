@@ -1,14 +1,14 @@
 <?xml version='1.0'?>
 <sdf version='1.5'>
-    <model name="APPS_letters">
+    <model name="bookcase">
         <pose>0 0 0 0 0 0</pose>
-        <static>true</static>
+        <static>false</static>
         <link name='model_body'>
             <visual name="visual">
                 <geometry>
                     <mesh>
-                        <uri>model://robert_gazebo/meshes/APPS_letters_visual.dae</uri>
-                        <scale>1.5 1.5 1.5</scale>
+                        <uri>model://robert_gazebo/meshes/bookcase_visual.dae</uri>
+                        <scale>1 1 1</scale>
                     </mesh>
                 </geometry>
             </visual>
@@ -16,23 +16,22 @@
             <collision name="collision">
                 <geometry>
                     <mesh>
-                        <uri>model://robert_gazebo/meshes/APPS_letters_collision.dae</uri>
-                        <scale>1.5 1.5 1.5</scale>
+                        <uri>model://robert_gazebo/meshes/bookcase_collision.dae</uri>
+                        <scale>1 1 1</scale>
                     </mesh>
                 </geometry>
             </collision>
-
             <inertial>
-                <pose> 0 0 0 0 0 0</pose>
+                <pose>0 0 0 0 0 0</pose>
                 <inertia>
-                    <ixx>4.44</ixx>
+                    <ixx>4.16</ixx>
                     <ixy>0</ixy>
                     <ixz>0</ixz>
-                    <iyy>0.47</iyy>
+                    <iyy>4.09</iyy>
                     <iyz>0</iyz>
-                    <izz>4.05</izz>
+                    <izz>0.25</izz>
                 </inertia>
-                <mass>10.0</mass>
+                <mass>12.0</mass>
             </inertial>
         </link>
     </model>
