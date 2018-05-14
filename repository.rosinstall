@@ -1,4 +1,0 @@
-- git:
-    uri: https://github.com/husky/husky.git
-    version: kinetic-devel
-    local-name: husky_common
