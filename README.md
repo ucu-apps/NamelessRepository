@@ -89,6 +89,11 @@ Launch navigation stack (in order to launch second command split Terminator wind
 roslaunch robert_launch navigation.launch
 ```
 
+Start navigation in UCU simulation
+```bash
+roslaunch robert_launch navigation.launch map_file:=ucu
+```
+
 In RViz which appear after some time select "2D Nav Goal" and robot will travel to it.
 Like it is shown in [this video](https://www.youtube.com/watch?v=xSdHlC2ISq8).
 
