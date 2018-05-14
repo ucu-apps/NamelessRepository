@@ -9167,6 +9167,8 @@
       <pose frame=''>-1.2423 -1.3637 0 0 -0 0</pose>
     </model>
 
+
+
     <model name='colums_lectorium'>
       <pose frame=''> 0 0 0 0 0 0</pose>
       <static>1</static>
@@ -9570,6 +9572,7 @@
       </link>
       <allow_auto_disable>1</allow_auto_disable>
     </model>
+
 
     <include>
       <uri>model://robert_gazebo/models/APPS_letters</uri>
@@ -11228,6 +11231,7 @@
       <name>table_lect_35</name>
       <pose>0.05766 15.3751 0.654751 0.000164 -4.5e-05 1.51224</pose>
     </include>
+
 
 
   </world>
