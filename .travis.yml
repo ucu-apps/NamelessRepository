@@ -7,7 +7,7 @@ services:
 
 env:
   global:
-    - docker_image_name: ucuapps/robert
+    - docker_image_name: ucuapps/robert-base
     - toolset_branch: master
     - server_type: travis
     - ros_release_name: kinetic

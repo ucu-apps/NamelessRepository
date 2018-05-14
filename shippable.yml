@@ -4,7 +4,7 @@ python:
 
 build:
   pre_ci_boot:
-    image_name: ucuapps/robert
+    image_name: ucuapps/robert-base
     image_tag: latest
     pull: true
   ci:
