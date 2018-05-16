@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version="1.5">
-  <model name="qr_007">
+  <model name="qr/007">
 
       <pose>0 0 0 0 0 0</pose>
 
@@ -26,7 +26,7 @@
           <script>
             <uri>model://robert_gazebo/models/qr/007/materials/scripts</uri>
             <uri>model://robert_gazebo/models/qr/007/materials/textures</uri>
-            <name>qr_007</name>
+            <name>qr/007</name>
           </script>
         </material>
       </visual>

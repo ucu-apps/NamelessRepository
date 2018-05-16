@@ -11229,6 +11229,11 @@
       <pose>0.05766 15.3751 0.654751 0.000164 -4.5e-05 1.51224</pose>
     </include>
 
+    <include>
+      <uri>model://robert_gazebo/models/qr/007</uri>
+      <name>qr_007</name>
+      <pose>3.17 -4.53 1.5 0 0 0</pose>
+    </include>
 
   </world>
 </sdf>

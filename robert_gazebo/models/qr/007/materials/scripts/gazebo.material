@@ -6,7 +6,7 @@ material qr/007
     {
       texture_unit
       {
-        texture qr_example.png
+        texture qr_007_example.png
       }
     }
   }
