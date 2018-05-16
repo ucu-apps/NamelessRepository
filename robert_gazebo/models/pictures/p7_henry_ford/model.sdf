@@ -7,7 +7,7 @@
       <collision name='collision'>
         <geometry>
           <box>
-            <size>0.44 0.025 0.612</size>
+            <size>0.44 0.017 0.612</size>
           </box>
         </geometry>
       </collision>
@@ -15,7 +15,7 @@
       <visual name='visual'>
         <geometry>
           <box>
-            <size>0.44 0.025 0.612</size>
+            <size>0.44 0.017 0.612</size>
           </box>
         </geometry>
 
@@ -23,7 +23,7 @@
           <script>
             <uri>model://robert_gazebo/models/pictures/p7_henry_ford/materials/scripts</uri>
             <uri>model://robert_gazebo/models/pictures/p7_henry_ford/materials/textures</uri>
-            <name>p7_henry_ford</name>
+            <name>picture/p7_henry_ford</name>
           </script>
         </material>
       </visual>
