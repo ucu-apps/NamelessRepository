@@ -4,22 +4,29 @@
     <pose>0 0 0 0 0 0</pose>
     <static>true</static>
     <link name='model_body'>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://robert_gazebo/meshes/pictures/p4_viktor_morozov.dae</uri>
-            <scale>1 1 1</scale>
-          </mesh>
-         </geometry>
-      </visual>
-
       <collision name='collision'>
         <geometry>
           <box>
-            <size>0.44 0.61 0.01</size>
+            <size>0.44 0.025 0.612</size>
           </box>
         </geometry>
       </collision>
+
+      <visual name='visual'>
+        <geometry>
+          <box>
+            <size>0.44 0.025 0.612</size>
+          </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://robert_gazebo/models/pictures/p4_viktor_morozov/materials/scripts</uri>
+            <uri>model://robert_gazebo/models/pictures/p4_viktor_morozov/materials/textures</uri>
+            <name>p4_viktor_morozov</name>
+          </script>
+        </material>
+      </visual>
 
       <inertial>
         <pose> 0 0 0 0 0 0</pose>

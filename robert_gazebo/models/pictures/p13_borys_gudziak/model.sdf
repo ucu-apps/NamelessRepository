@@ -4,22 +4,29 @@
     <pose>0 0 0 0 0 0</pose>
     <static>true</static>
     <link name='model_body'>
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>model://robert_gazebo/meshes/pictures/p13_borys_gudziak.dae</uri>
-            <scale>1 1 1</scale>
-          </mesh>
-         </geometry>
-      </visual>
-
       <collision name='collision'>
         <geometry>
           <box>
-            <size>0.44 0.61 0.01</size>
+            <size>0.44 0.025 0.612</size>
           </box>
         </geometry>
       </collision>
+
+      <visual name='visual'>
+        <geometry>
+          <box>
+            <size>0.44 0.025 0.612</size>
+          </box>
+        </geometry>
+
+        <material>
+          <script>
+            <uri>model://robert_gazebo/models/pictures/p13_borys_gudziak/materials/scripts</uri>
+            <uri>model://robert_gazebo/models/pictures/p13_borys_gudziak/materials/textures</uri>
+            <name>p13_borys_gudziak</name>
+          </script>
+        </material>
+      </visual>
 
       <inertial>
         <pose> 0 0 0 0 0 0</pose>
