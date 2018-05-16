@@ -1,0 +1,13 @@
+material picture/p4_viktor_morozov
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p4_viktor_morozov.jpg
+      }
+    }
+  }
+}

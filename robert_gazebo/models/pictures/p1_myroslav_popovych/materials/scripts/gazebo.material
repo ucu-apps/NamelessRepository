@@ -1,0 +1,13 @@
+material picture/p1_myroslav_popovych
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p1_myroslav_popovych.jpg
+      }
+    }
+  }
+}

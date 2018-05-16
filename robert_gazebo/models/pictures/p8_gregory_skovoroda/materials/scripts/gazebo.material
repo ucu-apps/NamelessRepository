@@ -1,0 +1,13 @@
+material picture/p8_gregory_skovoroda
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p8_gregory_skovoroda.jpg
+      }
+    }
+  }
+}

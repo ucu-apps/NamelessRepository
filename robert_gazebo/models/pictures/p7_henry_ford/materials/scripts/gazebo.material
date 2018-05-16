@@ -1,0 +1,13 @@
+material picture/p7_henry_ford
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p7_henry_ford.jpg
+      }
+    }
+  }
+}
