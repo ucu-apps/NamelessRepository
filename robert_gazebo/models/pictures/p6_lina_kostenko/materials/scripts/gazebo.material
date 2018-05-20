@@ -1,0 +1,13 @@
+material picture/p6_lina_kostenko
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p6_lina_kostenko.jpg
+      }
+    }
+  }
+}

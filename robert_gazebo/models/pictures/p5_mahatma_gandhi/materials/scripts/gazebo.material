@@ -1,0 +1,13 @@
+material picture/p5_mahatma_gandhi
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p5_mahatma_gandhi.jpg
+      }
+    }
+  }
+}

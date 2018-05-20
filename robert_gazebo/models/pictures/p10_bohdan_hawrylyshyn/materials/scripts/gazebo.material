@@ -1,0 +1,13 @@
+material picture/p10_bohdan_hawrylyshyn
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p10_bohdan_hawrylyshyn.jpg
+      }
+    }
+  }
+}
