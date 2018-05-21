@@ -1,0 +1,13 @@
+material picture/p12_donald_knuth
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p12_donald_knuth.jpg
+      }
+    }
+  }
+}

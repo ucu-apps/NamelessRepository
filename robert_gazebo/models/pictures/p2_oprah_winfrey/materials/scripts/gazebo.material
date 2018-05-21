@@ -1,0 +1,13 @@
+material picture/p2_oprah_winfrey
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p2_oprah_winfrey.jpg
+      }
+    }
+  }
+}

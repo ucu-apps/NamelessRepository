@@ -1,0 +1,13 @@
+material picture/p9_adrian_slywotzky
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p9_adrian_slywotzky.jpg
+      }
+    }
+  }
+}

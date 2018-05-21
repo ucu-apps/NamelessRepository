@@ -1,0 +1,13 @@
+material picture/p14_oscar_wilde
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p14_oscar_wilde.jpg
+      }
+    }
+  }
+}

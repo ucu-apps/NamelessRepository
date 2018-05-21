@@ -1,0 +1,13 @@
+material picture/p13_borys_gudziak
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p13_borys_gudziak.jpg
+      }
+    }
+  }
+}

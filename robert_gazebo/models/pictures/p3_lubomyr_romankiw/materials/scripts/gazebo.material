@@ -1,0 +1,13 @@
+material picture/p3_lubomyr_romankiw
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p3_lubomyr_romankiw.jpg
+      }
+    }
+  }
+}

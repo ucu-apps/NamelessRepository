@@ -1,0 +1,13 @@
+material picture/p11_sheryl_sandberg
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture p11_sheryl_sandberg.jpg
+      }
+    }
+  }
+}
