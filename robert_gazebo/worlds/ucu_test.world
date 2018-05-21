@@ -10374,25 +10374,25 @@
     <include>
       <uri>model://robert_gazebo/models/qr/008</uri>
       <name>qr_008</name>
-      <pose>1 0 1.6 0 0 0</pose>
+      <pose>-6.21 -6.6 1.6 0 0 1.57</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/qr/it-space_1</uri>
       <name>qr_it-space_1</name>
-      <pose>2 0 1.6 -1.57 0 0</pose>
+      <pose>12.23 3.64 1.6 0 0 -1.57</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/qr/it-space_2</uri>
       <name>qr_it-space_2</name>
-      <pose>3 0 1.6 1.57 0 0</pose>
+      <pose>-11.02 -1.22 1.6 0 0 1.57</pose>
     </include>
 
     <include>
       <uri>model://robert_gazebo/models/qr/lectorium</uri>
       <name>qr_lectorium</name>
-      <pose>4 0 1.6 3.14 0 0</pose>
+      <pose>1.46 6.52 1.6 0 0 -0.11</pose>
     </include>
 
   </world>
