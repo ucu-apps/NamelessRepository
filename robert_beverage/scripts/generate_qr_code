@@ -21,8 +21,8 @@ def get_coordinates():
             continue
         else:
             break
-    return {'x':trans.transform.translation.x,
-            'y':trans.transform.translation.y}
+    return {'x': trans.transform.translation.x,
+            'y': trans.transform.translation.y}
 
 
 def host_correct(host):
