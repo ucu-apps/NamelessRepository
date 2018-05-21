@@ -10,6 +10,7 @@ tfBuffer = tf2_ros.Buffer()
 listener = tf2_ros.TransformListener(tfBuffer)
 rate = rospy.Rate(10.0)
 
+
 def get_coordinates():
     while True:
         try:
@@ -20,8 +21,9 @@ def get_coordinates():
             continue
         else:
             break
-    return {'x' : trans.transform.translation.x,
-            'y' : trans.transform.translation.y}
+    return {'x':trans.transform.translation.x,
+            'y':trans.transform.translation.y}
+
 
 def host_correct(host):
     if host is "localhost":
