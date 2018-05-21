@@ -21,8 +21,16 @@ os.chdir(rospack.get_path('robert_beverage') + '/web_server')
 SUCCESS_PATH = "/success.html"
 FAIL_PATH = "/fail.html"
 
-client = actionlib.SimpleActionClient('move_base',MoveBaseAction)
+hanclient = actionlib.SimpleActionClient('/public/robot/move_base/goal',MoveBaseAction)
 client.wait_for_server()
+
+
+def isfloat(value):
+    try:
+        float(value)
+        return True
+    except ValueError:
+        return False
 
 
 def get_coordinates():
@@ -37,13 +45,6 @@ def get_coordinates():
             break
     return {'x':trans.transform.translation.x,
             'y':trans.transform.translation.y}
-
-def isfloat(value):
-    try:
-        float(value)
-        return True
-    except ValueError:
-        return False
 
 
 def move_base(x, y):
