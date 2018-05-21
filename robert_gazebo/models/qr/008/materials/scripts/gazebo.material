@@ -1,4 +1,4 @@
-material qr/007
+material qr/008
 {
   technique
   {
@@ -6,7 +6,7 @@ material qr/007
     {
       texture_unit
       {
-        texture qr_007.png
+        texture qr_008.png
       }
     }
   }
