@@ -12,7 +12,7 @@ rate = rospy.Rate(10.0)
 
 
 def get_coordinates():
-    while True:
+    while not rospy.is_shutdown():
         try:
             trans = tfBuffer.lookup_transform('map', 'base_link', rospy.Time())
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException,
@@ -46,10 +46,10 @@ parser.add_argument('--filename', metavar='f', type=str, default=["qr_code.png"]
 args = parser.parse_args()
 
 if not host_correct(args.host[0]):
-    rospy.logerr("host is not correct")
+    raise Exception("host is not correct")
 
 if os.path.isfile(args.filename[0]):
-    rospy.logerr("File with exact name already exist")
+    raise Exception("File with exact name already exist")
 
 link = "http://{}:{}/beverage?x={}&y={}".format(args.host[0], args.port[0],
                                                 coors['x'], coors['y'])

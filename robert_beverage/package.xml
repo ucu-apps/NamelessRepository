@@ -11,5 +11,4 @@
   <buildtool_depend>catkin</buildtool_depend>
   <run_depend>rospy</run_depend>
   <run_depend>python-qrencode</run_depend>
-  <run_depend>tf2_tools</run_depend>
 </package>
