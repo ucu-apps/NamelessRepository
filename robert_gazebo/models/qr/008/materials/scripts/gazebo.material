@@ -1,0 +1,13 @@
+material qr/008
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture qr_008.png
+      }
+    }
+  }
+}

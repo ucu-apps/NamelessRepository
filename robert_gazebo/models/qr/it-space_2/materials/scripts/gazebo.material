@@ -1,0 +1,13 @@
+material qr/it-space_2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture qr_it-space_2.png
+      }
+    }
+  }
+}

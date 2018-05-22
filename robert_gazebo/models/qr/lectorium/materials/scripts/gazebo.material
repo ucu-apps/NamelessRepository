@@ -1,0 +1,13 @@
+material qr/lectorium
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture qr_lectorium.png
+      }
+    }
+  }
+}
