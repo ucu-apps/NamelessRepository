@@ -21,7 +21,7 @@ os.chdir(rospack.get_path('robert_beverage') + '/web_server')
 SUCCESS_PATH = "/success.html"
 FAIL_PATH = "/fail.html"
 
-hanclient = actionlib.SimpleActionClient('/public/robot/move_base/goal',MoveBaseAction)
+client = actionlib.SimpleActionClient('/public/robot/move_base/goal',MoveBaseAction)
 client.wait_for_server()
 
 
