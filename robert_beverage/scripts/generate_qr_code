@@ -46,14 +46,15 @@ parser.add_argument('--filename', metavar='f', type=str, default=["qr_code.png"]
 args = parser.parse_args()
 
 if not host_correct(args.host[0]):
-    raise Exception("host is not correct")
+    rospy.logerr("host is not correct")
 
-if os.path.isfile(args.filename[0]):
-    raise Exception("File with exact name already exist")
+elif os.path.isfile(args.filename[0]):
+    rospy.logerr("File with exact name already exist")
 
-link = "http://{}:{}/beverage?x={}&y={}".format(args.host[0], args.port[0],
-                                                coors['x'], coors['y'])
-qr = qrencode.encode_scaled(link, size=100)[2]
-qr.save(args.filename[0])
-rospy.logdebug(link)
-rospy.loginfo('Done.')
+else:
+    link = "http://{}:{}/beverage?x={}&y={}".format(args.host[0],
+                            args.port[0], coors['x'], coors['y'])
+    qr = qrencode.encode_scaled(link, size=100)[2]
+    qr.save(args.filename[0])
+    rospy.logdebug(link)
+    rospy.loginfo('Done.')
