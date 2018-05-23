@@ -13,6 +13,9 @@ import tf2_ros
 rospy.init_node('web_server_node')
 rospy.loginfo('Inside web_server script')
 rospack = rospkg.RosPack()
+tfBuffer = tf2_ros.Buffer()
+listener = tf2_ros.TransformListener(tfBuffer)
+rate = rospy.Rate(10.0)
 
 HOST = socket.gethostname()
 PORT = 8080
