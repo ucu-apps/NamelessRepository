@@ -38,6 +38,7 @@ def host_correct(host):
     except (ValueError, AssertionError):
         return False
 
+
 coors = get_coordinates()
 parser = argparse.ArgumentParser(description='generate qr-code')
 parser.add_argument('--host', metavar='h', type=str, default=["localhost"], nargs=1)
@@ -52,8 +53,8 @@ elif os.path.isfile(args.filename[0]):
     rospy.logerr("File with exact name already exist")
 
 else:
-    link = "http://{}:{}/beverage?x={}&y={}".format(args.host[0],
-                            args.port[0], coors['x'], coors['y'])
+    link = "http://{}:{}/beverage?x={}&y={}".format(args.host[0], args.port[0],
+                                                    coors['x'], coors['y'])
     qr = qrencode.encode_scaled(link, size=100)[2]
     qr.save(args.filename[0])
     rospy.logdebug(link)
