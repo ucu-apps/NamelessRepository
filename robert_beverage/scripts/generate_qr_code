@@ -1,7 +1,28 @@
 #!/usr/bin/env python
+import rospy
 import os
 import qrencode
 import argparse
+import tf2_ros
+
+rospy.init_node('qr_code_generator')
+tfBuffer = tf2_ros.Buffer()
+listener = tf2_ros.TransformListener(tfBuffer)
+rate = rospy.Rate(10.0)
+
+
+def get_coordinates():
+    while not rospy.is_shutdown():
+        try:
+            trans = tfBuffer.lookup_transform('map', 'base_link', rospy.Time())
+        except (tf2_ros.LookupException, tf2_ros.ConnectivityException,
+                tf2_ros.ExtrapolationException):
+            rate.sleep()
+            continue
+        else:
+            break
+    return {'x': trans.transform.translation.x,
+            'y': trans.transform.translation.y}
 
 
 def host_correct(host):
@@ -18,22 +39,23 @@ def host_correct(host):
         return False
 
 
+coors = get_coordinates()
 parser = argparse.ArgumentParser(description='generate qr-code')
-parser.add_argument('--x', metavar='x', type=float, nargs=1)
-parser.add_argument('--y', metavar='y', type=float, nargs=1)
 parser.add_argument('--host', metavar='h', type=str, default=["localhost"], nargs=1)
 parser.add_argument('--port', metavar='p', type=int, default=[8080], nargs=1)
 parser.add_argument('--filename', metavar='f', type=str, default=["qr_code.png"], nargs=1)
 args = parser.parse_args()
 
 if not host_correct(args.host[0]):
-    raise Exception("host is not correct")
+    rospy.logerr("host is not correct")
 
-if os.path.isfile(args.filename[0]):
-    raise Exception("File with exact name already exist")
+elif os.path.isfile(args.filename[0]):
+    rospy.logerr("File with exact name already exist")
 
-link = "http://{}:{}/beverage?x={}&y={}".format(args.host[0], args.port[0],
-                                                args.x[0], args.y[0])
-qr = qrencode.encode_scaled(link, size=100)[2]
-qr.save(args.filename[0])
-print 'Done.'
+else:
+    link = "http://{}:{}/beverage?x={}&y={}".format(args.host[0], args.port[0],
+                                                    coors['x'], coors['y'])
+    qr = qrencode.encode_scaled(link, size=100)[2]
+    qr.save(args.filename[0])
+    rospy.logdebug(link)
+    rospy.loginfo('Done.')
