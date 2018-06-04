@@ -24,7 +24,7 @@ os.chdir(rospack.get_path('robert_beverage') + '/web_server')
 SUCCESS_PATH = "/success.html"
 FAIL_PATH = "/fail.html"
 
-client = actionlib.SimpleActionClient('/public/robot/move_base/goal',MoveBaseAction)
+client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
 client.wait_for_server()
 
 
@@ -46,8 +46,8 @@ def get_coordinates():
             continue
         else:
             break
-    return {'x':trans.transform.translation.x,
-            'y':trans.transform.translation.y}
+    return {'x': trans.transform.translation.x,
+            'y': trans.transform.translation.y}
 
 
 def move_base(x, y):
@@ -93,6 +93,7 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                     self.path = FAIL_PATH
                 else:
                     result = move_base(params['x'], params['y'])
+                    rospy.loginfo(result)
                     self.path = SUCCESS_PATH
         elif self.path.startswith("/styles") or self.path.startswith("/images"):
             pass
