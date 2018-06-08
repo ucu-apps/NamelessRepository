@@ -77,7 +77,8 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                     result = move_base(params['x'], params['y'])
                     rospy.loginfo(result)
                     self.path = SUCCESS_PATH
-        elif self.path.startswith("/styles") or self.path.startswith("/images"):
+        elif self.path.startswith("/styles") or self.path.startswith(
+                "/images") or self.path.startswith("/favicon"):
             pass
         else:
             rospy.logerr("Invalid url")
