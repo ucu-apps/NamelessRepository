@@ -8,13 +8,10 @@ from urlparse import urlparse, parse_qsl
 import rospkg
 import actionlib
 from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
-import tf2_ros
 
 rospy.init_node('web_server_node')
 rospy.loginfo('Inside web_server script')
 rospack = rospkg.RosPack()
-tfBuffer = tf2_ros.Buffer()
-listener = tf2_ros.TransformListener(tfBuffer)
 rate = rospy.Rate(10.0)
 
 HOST = socket.gethostname()
@@ -36,27 +33,12 @@ def isfloat(value):
         return False
 
 
-def get_coordinates():
-    while True:
-        try:
-            trans = tfBuffer.lookup_transform('map', 'base_link', rospy.Time())
-        except (tf2_ros.LookupException, tf2_ros.ConnectivityException,
-                tf2_ros.ExtrapolationException):
-            rate.sleep()
-            continue
-        else:
-            break
-    return {'x': trans.transform.translation.x,
-            'y': trans.transform.translation.y}
-
-
 def move_base(x, y):
-    cur_coor = get_coordinates()
     goal = MoveBaseGoal()
     goal.target_pose.header.frame_id = "map"
     goal.target_pose.header.stamp = rospy.Time.now()
-    goal.target_pose.pose.position.x = cur_coor['x'] - x
-    goal.target_pose.pose.position.y = cur_coor['y'] - y
+    goal.target_pose.pose.position.x = x
+    goal.target_pose.pose.position.y = y
     goal.target_pose.pose.orientation.w = 1.0
     client.send_goal(goal)
     wait = client.wait_for_result()
