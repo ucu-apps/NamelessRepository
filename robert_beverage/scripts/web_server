@@ -6,10 +6,13 @@ import SocketServer
 import SimpleHTTPServer
 from urlparse import urlparse, parse_qsl
 import rospkg
+import actionlib
+from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
 
 rospy.init_node('web_server_node')
 rospy.loginfo('Inside web_server script')
 rospack = rospkg.RosPack()
+rate = rospy.Rate(10.0)
 
 HOST = socket.gethostname()
 PORT = 8080
@@ -18,6 +21,9 @@ os.chdir(rospack.get_path('robert_beverage') + '/web_server')
 SUCCESS_PATH = "/success.html"
 FAIL_PATH = "/fail.html"
 
+client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
+client.wait_for_server()
+
 
 def isfloat(value):
     try:
@@ -25,6 +31,22 @@ def isfloat(value):
         return True
     except ValueError:
         return False
+
+
+def move_base(x, y):
+    goal = MoveBaseGoal()
+    goal.target_pose.header.frame_id = "map"
+    goal.target_pose.header.stamp = rospy.Time.now()
+    goal.target_pose.pose.position.x = x
+    goal.target_pose.pose.position.y = y
+    goal.target_pose.pose.orientation.w = 1.0
+    client.send_goal(goal)
+    wait = client.wait_for_result()
+    if not wait:
+        rospy.logerr("Action server not available!")
+        rospy.signal_shutdown("Action server not available!")
+    else:
+        return client.get_result()
 
 
 class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
@@ -52,9 +74,11 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                         rospy.logerr("y value doesn't exist")
                     self.path = FAIL_PATH
                 else:
-                    rospy.loginfo("x=%f\ty=%f", params['x'], params['y'])
+                    result = move_base(params['x'], params['y'])
+                    rospy.loginfo(result)
                     self.path = SUCCESS_PATH
-        elif self.path.startswith("/styles") or self.path.startswith("/images"):
+        elif self.path.startswith("/styles") or self.path.startswith(
+                "/images") or self.path.startswith("/favicon"):
             pass
         else:
             rospy.logerr("Invalid url")
