@@ -51,6 +51,7 @@ def move_base(x, y):
 
 class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_GET(self):
+        success = False
         if self.path.startswith("/beverage?"):
             parsed = urlparse(self.path)
             params = dict(parse_qsl(parsed.query))
@@ -74,16 +75,18 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                         rospy.logerr("y value doesn't exist")
                     self.path = FAIL_PATH
                 else:
-                    result = move_base(params['x'], params['y'])
-                    rospy.loginfo(result)
                     self.path = SUCCESS_PATH
+                    success = True
         elif self.path.startswith("/styles") or self.path.startswith(
                 "/images") or self.path.startswith("/favicon"):
             pass
         else:
             rospy.logerr("Invalid url")
             self.path = FAIL_PATH
-        return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
+        SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
+        if success:
+            result = move_base(params['x'], params['y'])
+            rospy.loginfo(result)
 
 
 SocketServer.TCPServer.allow_reuse_address = True
