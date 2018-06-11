@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/style_for_error.css">
+    <title>Wait</title>
+</head>
+
+<body>
+<img src="images/oops.png" alt="Fallen Ice Cream" anign="center">
+<h2><hr></hr> Getting your Ice Cream to you. Please wait.</h2>
+<div id="loader" style="display: none;"></div>
+
+<script>
+
+var urlParams;
+(window.onpopstate = function () {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    urlParams = {};
+    while (match = search.exec(query))
+       urlParams[decode(match[1])] = decode(match[2]);
+})();
+
+function createIframe(){
+  var backgroundFrame = document.createElement("iframe");
+  console.log("Going to coordinates x=" + urlParams["x"] + "&y=" + urlParams["y"]);
+  backgroundFrame.src = "/beverage?x=" + urlParams["x"] + "&y=" + urlParams["y"] + "&t=" + (new Date().getTime());
+  backgroundFrame.onload = function() {
+    console.log('Loaded content of iframe');
+    var backgroundFrameDocument = (backgroundFrame.contentWindow || backgroundFrame.contentDocument);
+    if (backgroundFrameDocument.document) {
+      backgroundFrameDocument = backgroundFrameDocument.document;
+    }
+    document.body.innerHTML = backgroundFrameDocument.body.innerHTML;
+    console.log('Swapped content of iframe and web page');
+  };
+  document.getElementById("loader").appendChild(backgroundFrame);
+};
+
+// Check for browser support of event handling capability
+if (window.addEventListener)
+window.addEventListener("load", createIframe, false);
+else if (window.attachEvent)
+window.attachEvent("onload", createIframe);
+else window.onload = createIframe;
+
+</script>
+
+</body>
+</html>
