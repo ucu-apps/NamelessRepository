@@ -76,17 +76,15 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                     self.path = FAIL_PATH
                 else:
                     self.path = SUCCESS_PATH
-                    success = True
+                    result = move_base(params['x'], params['y'])
+                    rospy.loginfo(result)
         elif self.path.startswith("/styles") or self.path.startswith(
                 "/images") or self.path.startswith("/favicon"):
             pass
         else:
             rospy.logerr("Invalid url")
             self.path = FAIL_PATH
-        SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
-        if success:
-            result = move_base(params['x'], params['y'])
-            rospy.loginfo(result)
+        return SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
 
 SocketServer.TCPServer.allow_reuse_address = True
