@@ -20,6 +20,7 @@ address = ("", PORT)
 os.chdir(rospack.get_path('robert_beverage') + '/web_server')
 SUCCESS_PATH = "/success.html"
 FAIL_PATH = "/fail.html"
+DONE_PATH = "/images/done.png"
 
 client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
 client.wait_for_server()
@@ -75,10 +76,12 @@ class RequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                         rospy.logerr("y value doesn't exist")
                     self.path = FAIL_PATH
                 else:
-                    self.path = SUCCESS_PATH
                     if self.path.startswith("/beverage_hid?"):
                         result = move_base(params['x'], params['y'])
                         rospy.loginfo(result)
+                        self.path = DONE_PATH
+                    else:
+                        self.path = SUCCESS_PATH
         elif self.path.startswith("/styles") or self.path.startswith(
                 "/images") or self.path.startswith("/favicon"):
             pass

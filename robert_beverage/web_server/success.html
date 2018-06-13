@@ -21,7 +21,8 @@
 //doesn't block the load event
 function createIframe(){
   var i = document.createElement("iframe");
-  i.src = "/beverage_hid?x=1&y=2";
+  var q = window.location.search;
+  i.src = "/beverage_hid" + q;
   i.scrolling = "auto";
   i.frameborder = "0";
   i.width = "200px";
