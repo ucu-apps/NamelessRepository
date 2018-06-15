@@ -20,7 +20,7 @@ address = ("", PORT)
 os.chdir(rospack.get_path('robert_beverage') + '/web_server')
 SUCCESS_PATH = "/success.html"
 FAIL_PATH = "/fail.html"
-DONE_PATH = "/images/done.png"
+DONE_PATH = "/images/done.svg"
 
 client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
 client.wait_for_server()

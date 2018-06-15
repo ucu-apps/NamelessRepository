@@ -24,10 +24,10 @@ function createIframe(){
   var i = document.createElement("iframe");
   var q = window.location.search;
   i.src = "/beverage_hid" + q;
-  i.scrolling = "auto";
+  i.scrolling = "no";
   i.frameborder = "0";
-  i.width = "200px";
-  i.height = "100px";
+  i.width = "50px";
+  i.height = "50px";
   document.getElementById("success").appendChild(i);
 };
 
