@@ -3,6 +3,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles/style_for_fresh.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fresh_Your_Day :)</title>
 </head>
 
@@ -14,6 +15,30 @@
 <h3 class="center">Your order is successfully accepted.<br> Wait for Your
     drink just in the same place where You ordered it. <br>
 </h3>
+
+<p id="success"></p>
+
+<script>
+//doesn't block the load event
+function createIframe(){
+  var i = document.createElement("iframe");
+  var q = window.location.search;
+  i.src = "/beverage_hid" + q;
+  i.scrolling = "no";
+  i.frameborder = "0";
+  i.width = "50px";
+  i.height = "50px";
+  document.getElementById("success").appendChild(i);
+};
+
+// Check for browser support of event handling capability
+if (window.addEventListener)
+window.addEventListener("load", createIframe, false);
+else if (window.attachEvent)
+window.attachEvent("onload", createIframe);
+else window.onload = createIframe;
+
+</script>
 
 <!--<form method="POST">
     <h2><b>Enter a number of drinks to order: </b></h2>
